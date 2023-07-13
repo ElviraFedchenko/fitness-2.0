@@ -18,10 +18,10 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container">
-        <div class="main-nav__wrapper">
-          <div class="main-nav">
+    <main>
+      <section class="main-nav">
+        <div class="container">
+          <div class="main-nav__wrapper">
             <a class="main-nav__logo">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/svg/supergym-logo-desktop.svg" width="122" height="44">
@@ -36,42 +36,31 @@
           <div class="main-nav__container">
             <div class="main-nav__inner">
               <p class="main-nav__city">Омск</p>
-              <ul class="main-nav__list">
-                <li class="main-nav__item">Тренажёрный зал</li>
-                <li class="main-nav__item">Групповые занятия</li>
-                <li class="main-nav__item">Кардио-зона</li>
-              </ul>
-              <h1 class="main-nav__title">Фитнес<br>центр</h1>
+              <h1 class="main-nav__title">Фитнес центр</h1>
               <button class="main-nav__toggle" type="button">Купить абонемент</button>
+              <div class="main-nav__description">
+                <p>Тренажёрный зал</p>
+                <p>Групповые занятия</p>
+                <p>Кардио-зона</p>
+              </div>
             </div>
-            <div class="main-nav__promo">
+            <div class="main-nav__img">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/rectangle.webp 1x,
+                <source type="image/webp" srcset="img/rectangle.webp 1x,
               img/rectangle@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/rectangle-tablet.webp 1x,
-              img/rectangle-tablet@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/rectangle.jpg 1x, imgrectangle.jpg@2x.jpg 2x">
-                <img src="img/rectangle-tablet.jpg" srcset="img/rectangle-tablet@2x.jpg 2x" alt="Главное фото"
-                  width="324" height="390">
+                <img src="img/rectangle.jpg" srcset="img/rectangle@2x.jpg 2x" alt="Главное фото"
+                  width="500" height="556">
               </picture>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section class="intro">
         <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
         </div>
       </section>
-    </main>
+      </main>
     <footer>
       <div class="container"></div>
     </footer>

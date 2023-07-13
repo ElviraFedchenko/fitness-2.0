@@ -1,32 +1,29 @@
 .main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px 103px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  min-height: 658px;
+  color: $color-default-white;
+  padding-top: 30px;
+  padding-bottom: 47px;
+
+  @include tablet-width {
+    min-height: 554px;
+  }
+
+  @include mobile-width {
+    min-height: 491px;
+  }
 }
 
 .main-nav__wrapper {
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-nav__container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 51px;
-  gap: 64px;
-}
-
-.main-nav__city {
-  font-family: $alumni-sans-semi-bold;
-  font-size: 48px;
-  font-weight: 600;
-  color: $color-default-white;
-  text-transform: uppercase;
-  line-height: normal;
-  text-align: right;
-  margin: 0;
-  padding: 0;
+  position: relative;
 }
 
 .main-nav__phone {
@@ -37,26 +34,64 @@
   color: $color-default-white;
 }
 
-.main-nav__list {
-  list-style: none;
+.main-nav__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include tablet-width {
+      height: 390px;
+    }
+}
+
+.main-nav__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 106px;
+  padding-right: 64px;
+  padding-left: 94px;
+
+  // @include tablet-width {
+  //   padding-top: 45px;
+  //   padding-right: 30px;
+  //   padding-left: 45px;
+  // }
+}
+
+.main-nav__description {
+  position: absolute;
+  bottom: 193px;
+  left: 14px;
+}
+
+.main-nav__description p {
   font-family: $roboto-condensed-regular;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  color: $color-default-white;
+  text-align: right;
+  margin: 0;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.main-nav__city {
+  font-family: $alumni-sans-regular;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 1.44px;
+  margin: 0;
   text-align: right;
 }
 
 .main-nav__title {
   font-family: $alumni-sans-semi-bold;
-  font-size: 92px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
-  color: $color-default-white;
-  text-transform: uppercase;
+  font-size: 75px;
   text-align: right;
-  margin: 0;
+  letter-spacing: 4.6px;
+  line-height: normal;
+  max-width: 300px;
+  margin: 0 0 65px;
 }
 
 .main-nav__toggle {
