@@ -1,0 +1,72 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 103px;
+}
+
+.main-nav__wrapper {
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+}
+
+.main-nav__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 51px;
+  gap: 64px;
+}
+
+.main-nav__city {
+  font-family: $alumni-sans-semi-bold;
+  font-size: 48px;
+  font-weight: 600;
+  color: $color-default-white;
+  text-transform: uppercase;
+  line-height: normal;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__phone {
+  font-family: $alumni-sans-regular;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  color: $color-default-white;
+}
+
+.main-nav__list {
+  list-style: none;
+  font-family: $roboto-condensed-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: $color-default-white;
+  text-align: right;
+}
+
+.main-nav__title {
+  font-family: $alumni-sans-semi-bold;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 0;
+}
+
+.main-nav__toggle {
+  background: transparent;
+  padding: 24px 56px;
+  text-transform: uppercase;
+  font-family: $roboto-condensed-bold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  color: $color-default-white;
+  border: 4px solid $color-default-white;
+}
