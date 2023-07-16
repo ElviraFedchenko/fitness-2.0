@@ -39,7 +39,7 @@
 // Desktop first
 
 @mixin desktop-width-only {
-  @media (min-width: 1439px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
