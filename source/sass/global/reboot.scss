@@ -17,7 +17,6 @@ html {
   font-size: $fz-default;
   line-height: 24px;
   font-family: $alumni-sans-regular;
-  background-color: chartreuse;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -39,6 +38,18 @@ a {
   color: $color-default-black;
   text-decoration: none;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 
 img,
 video {

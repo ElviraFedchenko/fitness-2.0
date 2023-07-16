@@ -1,0 +1,33 @@
+.content {
+  position: absolute;
+  left: 38.5%;
+  top: 407px;
+  width: 364px;
+  height: 228px;
+
+  @include tablet-width {
+    top: 588px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 266px;
+    height: 167px;
+  }
+
+  @include mobile-width {
+    position: static;
+    width: 320px;
+    height: 167px;
+  }
+
+  &__button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 73px;
+    height: 73px;
+    margin: -40px 0 0 -40px;
+    border: 5px solid #fff;
+    border-radius: 100%;
+  }
+}
