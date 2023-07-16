@@ -6,12 +6,16 @@
   display: flex;
   justify-content: space-between;
   gap: 85px;
-  width: 100%;
+  max-width: 1366px;
 
   @include tablet-width {
     flex-direction: column;
     padding: 100px 45px 183px 45px;
     align-items: center;
+  }
+
+  @include mobile-width {
+    padding: 70px 15px 70px 15px;
   }
 
   &__description {
@@ -66,7 +70,7 @@
   }
 
   &__description p {
-    font-family: $roboto-condensed-regular;
+    font-family: $roboto-condensed-lite;
     font-size: 16px;
     font-weight: 300;
     margin: 0;

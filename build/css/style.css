@@ -316,42 +316,49 @@ template {
 
 @font-face {
   font-family: "AlumniSans-Regular";
-  src: url("../fonts/alumni-sans-regular.woff2") format("woff2");
+  src: url("../../fonts/alumni-sans-v16-cyrillic_latin-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "AlumniSans-Medium";
-  src: url("../fonts/alumni-sans-medium.woff2") format("woff2");
+  src: url("../../fonts/alumni-sans-v16-cyrillic_latin-500.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "AlumniSans-SemiBold";
-  src: url("../fonts/alumni-sans-semi-bold.woff2") format("woff2");
+  src: url("../../fonts/alumni-sans-v16-cyrillic_latin-600.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "AlumniSans-Bold";
-  src: url("../fonts/alumni-sans-bold.woff2") format("woff2");
+  src: url("../../fonts/alumni-sans-v16-cyrillic_latin-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "RobotoCondensed-Regular";
-  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2");
+  src: url("../../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
+  font-family: "RobotoCondensed-Lite";
+  src: url("../../fonts/roboto-v30-cyrillic_latin-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "RobotoCondensed-Bold";
-  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2");
+  src: url("../../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -568,8 +575,9 @@ button,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1366px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 @media (min-width: 1200px) {
   .container {
@@ -1275,11 +1283,24 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1199px) {
+  .main-nav__wrapper {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav__wrapper {
+    padding: 0;
+  }
+}
 .main-nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .main-nav__phone {
   font-family: "AlumniSans-Regular", "Arial", sans-serif;
@@ -1315,7 +1336,7 @@ button,
           align-items: flex-end;
   padding-top: 106px;
   padding-right: 64px;
-  padding-left: 94px;
+  padding-left: 159px;
 }
 @media (max-width: 1199px) {
   .main-nav__inner {
@@ -1326,33 +1347,68 @@ button,
 }
 @media (max-width: 767px) {
   .main-nav__inner {
-    padding-top: 53px;
+    padding-top: 80px;
     padding-left: 0;
     padding-right: 0;
   }
 }
 .main-nav__city {
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   font-size: 48px;
   letter-spacing: 1.44px;
-  line-height: normal;
+  line-height: 58px;
   text-align: right;
   margin: 0;
 }
-.main-nav__inner h1 {
+@media (max-width: 1199px) {
+  .main-nav__city {
+    font-size: 34px;
+    line-height: normal;
+    letter-spacing: 1.02px;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav__city {
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: 0.84px;
+  }
+}
+.main-nav__title {
   font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   font-weight: 600;
-  font-size: 75px;
+  font-size: 92px;
   text-align: right;
   letter-spacing: 4.6px;
-  line-height: normal;
+  line-height: 110px;
   max-width: 300px;
   margin: 0 0 65px;
+}
+@media (max-width: 1199px) {
+  .main-nav__title {
+    font-size: 72px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav__title {
+    font-size: 72px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+  }
 }
 .main-nav__description {
   position: absolute;
   bottom: 193px;
-  left: 14px;
+  left: 82px;
+}
+@media (max-width: 1199px) {
+  .main-nav__description {
+    bottom: 146px;
+    left: 0;
+  }
 }
 .main-nav__description p {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
@@ -1373,6 +1429,12 @@ button,
   color: #ffffff;
   border: 4px solid #ffffff;
 }
+@media (max-width: 1199px) {
+  .main-nav__toggle {
+    padding: 18px 10px;
+    min-width: 184px;
+  }
+}
 @media (max-width: 767px) {
   .main-nav__toggle {
     min-width: 100%;
@@ -1392,7 +1454,7 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 85px;
-  width: 100%;
+  max-width: 1366px;
 }
 @media (max-width: 1199px) {
   .intro {
@@ -1404,6 +1466,11 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    padding: 70px 15px 70px 15px;
   }
 }
 .intro__description {
@@ -1458,7 +1525,7 @@ button,
   }
 }
 .intro__description p {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed-Lite", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   margin: 0;
@@ -1518,11 +1585,12 @@ button,
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 73px;
-  height: 73px;
-  margin: -40px 0 0 -40px;
-  border: 5px solid #fff;
+  width: 100px;
+  height: 100px;
+  margin: -49px 0 0 -49px;
+  border: 2px solid;
   border-radius: 100%;
+  border-color: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
 /* @mixin hover-focus {
