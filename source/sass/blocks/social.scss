@@ -1,0 +1,32 @@
+.social {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 120px;
+    justify-content: flex-end;
+
+    @include mobile-width {
+      justify-content: flex-start;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 4px 5px 3px;
+  }
+
+  &__item::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+    border: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
