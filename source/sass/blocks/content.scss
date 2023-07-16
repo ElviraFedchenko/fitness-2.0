@@ -24,10 +24,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 73px;
-    height: 73px;
-    margin: -40px 0 0 -40px;
-    border: 5px solid #fff;
+    width: 100px;
+    height: 100px;
+    margin: -49px 0 0 -49px;
+    border: 2px solid;
     border-radius: 100%;
+    border-color: conic-gradient(from 130.31deg at 16.03% 39.06%,#b80027 -46.69deg,#003d85 32.24deg,#b80027 313.31deg,#003d85 392.24deg);
   }
 }
