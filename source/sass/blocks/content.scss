@@ -17,18 +17,49 @@
     position: static;
     width: 320px;
     height: 167px;
+    transform: translateX(0);
   }
 
-  &__button::before {
-    content: '';
+  &__video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 62.25%;
+    background-color: #102654;
+
+    @include mobile-width {
+      padding-bottom: 52.25%;
+    }
+  }
+
+  &__media {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    @include mobile-width {
+      height: 167px;
+    }
+  }
+
+  &__video--enabled .video__button {
+    display: block;
+  }
+
+  &__button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
     top: 50%;
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin: -49px 0 0 -49px;
-    border: 2px solid;
-    border-radius: 100%;
-    border-color: conic-gradient(from 130.31deg at 16.03% 39.06%,#b80027 -46.69deg,#003d85 32.24deg,#b80027 313.31deg,#003d85 392.24deg);
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+  }
+
+  &__button svg {
+    position: relative;
   }
 }

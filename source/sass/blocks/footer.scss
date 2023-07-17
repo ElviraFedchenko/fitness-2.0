@@ -32,9 +32,30 @@
     }
 
     @include mobile-width {
-      margin-right: 78px;
+      margin-right: 70px;
       margin-bottom: 15px;
     }
+  }
+
+  &__item--mobile {
+    @include desktop-width-only {
+      display: none;
+    }
+
+    @include tablet-width {
+      display: none;
+    }
+
+    @include mobile-width {
+      display: block;
+    }
+  }
+
+  &__item img {
+    width: 68px;
+    height: 15px;
+    margin-right: 0;
+    margin-bottom: 12px;
   }
 
   &__list {
@@ -68,5 +89,9 @@
 
   &__logo {
     margin-right: 47px;
+
+    @include mobile-width {
+      display: none;
+    }
   }
 }
