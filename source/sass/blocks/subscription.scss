@@ -1,0 +1,147 @@
+.subscription {
+  background-color: $additional-background;
+  padding: 120px 0 120px 0;
+
+  @include tablet-width {
+    padding: 100px 0 100px 0;
+  }
+
+  @include mobile-width {
+    padding: 63px 0 70px 0;
+  }
+
+  &__block {
+    padding: 25px;
+    width: 100%;
+
+    @include tablet-width {
+      padding: 15px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: $alumni-sans-semi-bold;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.62px;
+    color: #102654;
+
+    @include tablet-width {
+      padding-bottom: 26px;
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+
+    @include mobile-width {
+      padding-bottom: 27px;
+      font-size: 32px;
+      letter-spacing: 0.96px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @include tablet-width {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-items: center;
+    }
+
+    @include mobile-width {
+      gap: 35px;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    background-color: $color-default-white;
+    font-family: $roboto-condensed-regular;
+    color: #102654;
+    width: 360px;
+    min-height: 448px;
+    padding: 68px 77px;
+    text-align: center;
+
+    @include tablet-width {
+      padding: 68px 118px;
+      width: 442px;
+      min-height: 448px;
+    }
+
+    @include mobile-width {
+      padding: 55px 42px;
+      width: 206px;
+      min-height: 64px;
+    }
+  }
+
+  &__desk {
+    margin: 0;
+    font-family: $roboto-condensed-bold;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    padding-bottom: 22px;
+
+    @include mobile-width {
+      font-size: 22px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__action {
+    margin: 0;
+    padding-bottom: 96px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 150%;
+  }
+
+  @include mobile-width {
+    padding-bottom: 81px;
+  }
+
+  &__price {
+    position: relative;
+    margin: 0;
+    font-family: $roboto-condensed-bold;
+    color: #103aae;
+    font-size: 60px;
+    padding-bottom: 59px;
+    display: inline-block;
+
+    @include mobile-width {
+      font-size: 48px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__description {
+    color: $color-default-black;
+    position: absolute;
+    opacity: 0.1;
+    font-size: 100px;
+    width: 203px;
+    height: 69px;
+    top: -17px;
+    left: -13%;
+
+    @include mobile-width {
+      width: 162px;
+      height: 55px;
+      font-size: 80px;
+    }
+  }
+}
