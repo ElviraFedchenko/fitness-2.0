@@ -23,7 +23,7 @@
 
 <body>
   <div class="wrapper">
-    <main>
+    <header>
       <section class="main-nav">
         <div class="container">
           <div class="main-nav__wrapper">
@@ -54,67 +54,88 @@
                 <source type="image/webp" srcset="img/rectangle.webp 1x,
               img/rectangle@2x.webp 2x">
 
-                <img src="img/rectangle.jpg" srcset="img/rectangle@2x.jpg 2x" alt="Главное фото"
-                  width="500" height="556">
+                <img src="img/rectangle.jpg" srcset="img/rectangle@2x.jpg 2x" alt="Главное фото" width="500"
+                  height="556">
               </picture>
             </div>
           </div>
         </div>
       </section>
+    </header>
+    <main>
       <section class="intro">
-          <div class="intro__description">
-            <h2>Тренажерный зал</h2>
-            <h3>Просторный зал площадью 900 кв/м</h3>
-            <p>Supergym&nbsp;— самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
-              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-            </p>
-            <p class="intro__text">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона
-              с&nbsp;40&nbsp;тренажерами. Также
-              в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-          </div>
-          <div class="intro__img">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/hall.webp 1x, img/hall@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/hall-tablet.webp 1x, img/hall-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 320px)" srcset="img/hall-mobile.webp 1x, img/hall-mobile@2x.webp 2x">
+        <div class="intro__description">
+          <h2>Тренажерный зал</h2>
+          <h3>Просторный зал площадью 900 кв/м</h3>
+          <p>Supergym&nbsp;— самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+            и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p class="intro__text">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона
+            с&nbsp;40&nbsp;тренажерами. Также
+            в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="intro__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/hall.webp 1x, img/hall@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/hall-tablet.webp 1x, img/hall-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/hall-mobile.webp 1x, img/hall-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/hall.jpg 1x, img/hall@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/hall-tablet.jpg 1x, img/hall-tablet@2x.jpg 2x">
-              <img src="img/hall.jpg" srcset="img/hall@2x.jpg 2x" alt="Тренажёрный зал" width="320" height="167">
-            </picture>
-          </div>
-          <div class="content">
-            <div class="content__video">
-              <a class="content__link">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/hall.jpg 1x, img/hall@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/hall-tablet.jpg 1x, img/hall-tablet@2x.jpg 2x">
+            <img src="img/hall.jpg" srcset="img/hall@2x.jpg 2x" alt="Тренажёрный зал" width="320" height="167">
+          </picture>
+        </div>
+        <div class="content">
+          <div class="content__video content__video--enabled">
+            <a class="content__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)"
+                  srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/video.jpg 1x, img/video@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-                  <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Тренажёрный зал" width="364" height="228">
-                </picture>
-              </a>
-              <button class="content__button" aria-label="Посмотреть видео"></button>
-            </div>
+                <source media="(min-width: 1200px)" srcset="img/video.jpg 1x, img/video@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="content__media" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x"
+                  alt="Тренажёрный зал" width="364" height="228">
+              </picture>
+            </a>
+            <button class="content__button" aria-label="Посмотреть видео">
+              <svg width="100" height="100">
+                <use xlink:href="img/sprite.svg#button-media"></use>
+              </svg>
+            </button>
           </div>
+        </div>
       </section>
-      </main>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__logo">
-          <a class="footer__logo-link">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/svg/supergym-logo-desktop.svg" width="88" height="32">
-              <source media="(min-width: 768px)" srcset="img/svg/supergym-logo-tablet.svg" width="82" height="18">
-              <img src="img/svg/supergym-logo-mobile.svg" width="68" height="15" alt="логотип SUPERGYM">
-            </picture>
-          </a>
+            <a class="footer__logo-link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/svg/supergym-logo-desktop.svg" width="88" height="32">
+                <source media="(min-width: 768px)" srcset="img/svg/supergym-logo-tablet.svg" width="82" height="18">
+                <img src="img/svg/supergym-logo-mobile.svg" width="68" height="15" alt="логотип SUPERGYM">
+              </picture>
+            </a>
           </div>
           <div class="footer__nav">
             <ul class="footer__list">
+              <li class="footer__item footer__item--mobile">
+                <a class="footer__link">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/svg/supergym-logo-desktop.svg" width="88"
+                      height="32">
+                    <source media="(min-width: 768px)" srcset="img/svg/supergym-logo-tablet.svg" width="82" height="18">
+                    <img src="img/svg/supergym-logo-mobile.svg" width="68" height="15" alt="логотип SUPERGYM">
+                  </picture>
+                </a>
+              </li>
               <li class="footer__item">
                 <a class="footer__link" href="#">Услуги</a>
               </li>
@@ -134,28 +155,29 @@
           </div>
           <div class="footer__social social">
             <ul class="social__list">
-            <li class="social__item">
-              <a href="#" aria-label="Вконтакте">
-                <svg width="25" height="25">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="одноклассники">
-                <svg width="25" height="25">
-                  <use xlink:href="img/sprite.svg#ok"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="reddit">
-                <svg width="25" height="25">
-                  <use xlink:href="img/sprite.svg#reddit"></use>
-                </svg>
-              </a>
-            </li>
-          </ul></div>
+              <li class="social__item">
+                <a href="#" aria-label="Вконтакте">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" aria-label="одноклассники">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" aria-label="reddit">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

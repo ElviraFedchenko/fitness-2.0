@@ -12,10 +12,12 @@
     flex-direction: column;
     padding: 100px 45px 183px 45px;
     align-items: center;
+    gap: 50px;
   }
 
   @include mobile-width {
     padding: 70px 15px 70px 15px;
+    gap: 40px;
   }
 
   &__description {
