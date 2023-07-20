@@ -18,6 +18,7 @@
   <link rel="preload" href="./fonts/roboto-v30-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/roboto-v30-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -111,17 +112,20 @@
           </div>
         </div>
       </section>
-      <section class="subscription" data-tabs="element">
+      <section class="subscription">
         <div class="container">
           <h2 class="subscription__title">Абонементы</h2>
-          <div class="subscription__tabs tabs" data-tabs="parent" data-delay="300" data-height="max">
-            <div class="tabs__controls" data-tabs="controls">
-              <button class="tabs__control button" type="button" data-tabs="control">1 месяц</button>
-              <button class="tabs__control button" type="button" data-tabs="control">6 месяцев</button>
-              <button class="tabs__control button" type="button" data-tabs="control">12 месяцев</button>
+          <div class="subscription__tabs" data-tabs="parent" data-delay="300" data-height="max">
+            <div class="subscription__controls" data-tabs="controls">
+              <button class="subscription__control subscription__control--active button" type="button"
+                data-tabs="control" data-index="0">1 месяц</button>
+              <button class="subscription__control button" type="button" data-tabs="control" data-index="1">6
+                месяцев</button>
+              <button class="subscription__control button" type="button" data-tabs="control" data-index="2">12
+                месяцев</button>
             </div>
-            <div class="subscription__wrapper tabs__content" data-tabs="content">
-              <div class="subscription__block" data-tabs="element">
+            <div class="subscription__wrapper" data-tabs="content">
+              <div class="subscription__block subscription__block--active" data-tabs="element">
                 <ul class="subscription__list">
                   <li class="subscription__item subscription__item--card">
                     <h3 class="subscription__desk">С тренером</h3>
@@ -220,6 +224,138 @@
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscription__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/inventory.webp 1x, img/inventory@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/inventory-tablet.webp 1x, img/inventory-tablet@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/inventory.png 1x, img/inventory@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/inventory-tablet.png 1x, img/inventory-tablet@2x.png 2x">
+            <img src="img/inventory.png" width="321" height="384" srcset="img/inventory@2x.png 2x" alt="инвентарь">
+          </picture>
+        </div>
+      </section>
+      <section class="super">
+        <div class="container">
+          <div class="super__wrapper">
+            <div class="super__promo">
+              <div class="super__inner">
+                <h2 class="super__title">super games</h2>
+                <div class="super__date">
+                  <div class="super__date-item item">
+                    <p class="item__title">Дата</p>
+                    <div class="item__date">
+                      <p class="item__date-day">7</p>
+                      <p class="item__date-month">Марта</p>
+                      <p class="item__date-year">2019</p>
+                    </div>
+                  </div>
+                  <div class="super__date-item item">
+                    <p class="item__title">Время</p>
+                    <p class="item__time">12:00</p>
+                  </div>
+                </div>
+              </div>
+              <p class="super__description">Ежегодные соревнования по CrossFit</p>
+              <a class="super__button" href="#">заполнить заявку</a>
+            </div>
+            <div class="super__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/promo.webp 1x, img/promo@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)"
+                  srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/promo.jpg 1x, img/promo@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
+                <img src="img/promo.jpg" width="660" height="500" srcset="img/promo@2x.png 2x" alt="занятия в зале">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trainer">
+        <div class="container">
+          <h2>Тренеры</h2>
+          <div class="trainer__container">
+            <div class="trainer__slider swiper">
+              <div class="trainer__inner swiper-wrapper">
+                <div class="trainer__description swiper-slide">
+                  <picture>
+                    <source srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x" type="image/webp">
+                    <img src="img/trainer-1.jpg" width="260" height="294" srcset="img/trainer-1@2x.jpg 2x"
+                      alt="Анна Павлова">
+                  </picture>
+                  <div class="trainer__profile">Анна Павлова</div>
+                  <div class="trainer__wrapper">
+                    <p class="trainer__name">Анна Павлова</p>
+                    <p class="trainer__prof">CrossFit</p>
+                    <ul class="trainer__list">
+                      <li class="trainer__item">Certified Level 3 Trainer</li>
+                      <li class="trainer__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer__description swiper-slide">
+                  <picture>
+                    <source srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x" type="image/webp">
+                    <img src="img/trainer-2.jpg" width="260" height="294" srcset="img/trainer-2@2x.jpg 2x"
+                      alt="Алексей Лавров">
+                  </picture>
+                  <div class="trainer__profile">Алексей Лавров</div>
+                  <div class="trainer__wrapper">
+                    <p class="trainer__name">Алексей Лавров</p>
+                    <p class="trainer__prof">CrossFit</p>
+                    <ul class="trainer__list">
+                      <li class="trainer__item">Certified Level 3 Trainer</li>
+                      <li class="trainer__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer__description swiper-slide">
+                  <picture>
+                    <source srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x" type="image/webp">
+                    <img src="img/trainer-3.jpg" width="260" height="294" srcset="img/trainer-3@2x.jpg 2x"
+                      alt="Александр Пашков">
+                  </picture>
+                  <div class="trainer__profile">Александр Пашков</div>
+                  <div class="trainer__wrapper">
+                    <p class="trainer__name">Александр Пашков</p>
+                    <p class="trainer__prof">CrossFit</p>
+                    <ul class="trainer__list">
+                      <li class="trainer__item">Certified Level 3 Trainer</li>
+                      <li class="trainer__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer__description swiper-slide">
+                  <picture>
+                    <source srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x" type="image/webp">
+                    <img src="img/trainer-4.jpg" width="260" height="294" srcset="img/trainer-4@2x.jpg 2x"
+                      alt="Мария Кетова">
+                  </picture>
+                  <div class="trainer__profile">Мария Кетова</div>
+                  <div class="trainer__wrapper">
+                    <p class="trainer__name">Мария Кетова</p>
+                    <p class="trainer__prof">CrossFit</p>
+                    <ul class="trainer__list">
+                      <li class="trainer__item">Certified Level 3 Trainer</li>
+                      <li class="trainer__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -327,6 +463,7 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>

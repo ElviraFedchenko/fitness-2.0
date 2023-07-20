@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -56,6 +60,7 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 textarea {
@@ -94,6 +99,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
