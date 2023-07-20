@@ -5,14 +5,13 @@ import {initTabs} from './vendor/init-tabs';
 
 // ---------------------------------
 
-window.addEventListener('click', initTabs);
-
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
 
   iosVhFix();
+  initTabs();
 
   // Modules
   // ---------------------------------
