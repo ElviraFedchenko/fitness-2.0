@@ -55,6 +55,7 @@ window.addEventListener('DOMContentLoaded', function () {
   setupVideo();
 });
 
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
