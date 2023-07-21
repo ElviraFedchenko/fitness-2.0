@@ -100,7 +100,7 @@
     @include tablet-width {
       grid-template-columns: 1fr;
       gap: 40px;
-      justify-items: center;
+      justify-self: center
     }
 
     @include mobile-width {
