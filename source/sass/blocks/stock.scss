@@ -1,0 +1,41 @@
+.stock {
+  padding: 135px 0 120px;
+
+  @include tablet-width {
+    padding: 91px 0 100px;
+  }
+
+  @include mobile-width {
+    padding: 63px 0 70px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @include tablet-width {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+
+  &__sale {
+    min-height: 462px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background-color: $red-background;
+  }
+
+  &__description {
+    font-family: $roboto-condensed-bold;
+    color: $color-default-white;
+    padding: 35px 45px 45px;
+
+    h3 {
+      font-size: 28px;
+      line-height: 156%;
+      margin: 0;
+    }
+  }
+}
