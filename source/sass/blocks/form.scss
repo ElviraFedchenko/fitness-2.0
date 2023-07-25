@@ -1,0 +1,62 @@
+.form {
+  max-width: 410px;
+
+  @include tablet-width {
+    max-width: 472px;
+  }
+
+  @include mobile-width {
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 410px;
+
+    @include tablet-width {
+      max-width: 472px;
+    }
+
+    @include mobile-width {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  input {
+    font-family: $roboto-condensed-regular;
+    border: 0;
+    padding: 7px 0;
+    background-color: inherit;
+    font-size: 14px;
+    color: $color-default-white;
+    border-bottom: 1px solid #74819c;
+    width: 190px;
+    margin-bottom: 27px;
+
+    @include tablet-width {
+      width: 206px;
+    }
+
+    @include mobile-width {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    font-family: $roboto-condensed-bold;
+    color: $color-default-white;
+    background-color: inherit;
+    padding: 16px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border: 3px solid $color-default-white;
+    width: 100%;
+    cursor: pointer;
+  }
+}

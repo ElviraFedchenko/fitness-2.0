@@ -37,7 +37,7 @@
     grid-template-columns: 1fr min-content 1fr;
     align-self: center;
     margin: 0 60px;
-    justify-self: center;
+    justify-items: center;
 
     @include tablet-width {
       grid-template-columns: repeat(2, 1fr);
@@ -53,6 +53,9 @@
 
   &__item {
     display: flex;
+    min-height: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
 
     &--line {
       border-bottom: 2px solid rgba(209, 10, 66, 0.20);
@@ -60,6 +63,19 @@
       @include tablet-width {
         border-bottom: none;
       }
+    }
+
+    &--comfort,
+    &--experience {
+      align-items: flex-end;
+    }
+
+    @include mobile-width {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-right: 0;
+      padding-bottom: 12px;
     }
 
     &--block {
@@ -76,11 +92,12 @@
         grid-column: 1/3;
         grid-row: 2/3;
         width: 442px;
-        padding: 35px 20px 36px;
+        padding: 14px 115px 39px;
         margin: 33px 0 56px;
       }
 
       @include mobile-width {
+        width: 100vw;
         margin-left: -15px;
         padding: 40px 20px 39px;
       }
@@ -107,6 +124,11 @@
     font-size: 14px;
     line-height: 150%;
     color: #2e35ac;
+    margin: -25px 0 0;
+
+    @include tablet-width {
+      margin: -20px 0 0;
+    }
   }
 
   &__description {
@@ -124,17 +146,23 @@
     font-family: $roboto-condensed-bold;
     font-size: 26px;
     padding-bottom: 50px;
+
+    @include tablet-width {
+      padding: 0;
+      margin-bottom: 17px;
+      font-size: 22px;
+    }
   }
 
   &__desk {
-    margin: 0;
     font-family: $roboto-condensed-bold;
     font-size: 22px;
     line-height: 150%;
     color: #102654;
-    padding-bottom: 20px;
+    margin: 22px 0 5px;
 
     @include tablet-width {
+      margin: 20px 0 5px;
       font-size: 20px;
     }
   }
