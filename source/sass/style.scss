@@ -5,7 +5,7 @@
 @import "data-tabs";
 @import "vendor/data-accordion.scss";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -38,6 +38,8 @@
 @import "blocks/stock.scss";
 @import "blocks/feedback.scss";
 @import "blocks/reviews.scss";
+@import "blocks/connection.scss";
+@import "blocks/form.scss";
 
 
 

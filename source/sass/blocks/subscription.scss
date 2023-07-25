@@ -100,7 +100,7 @@
     @include tablet-width {
       grid-template-columns: 1fr;
       gap: 40px;
-      justify-self: center
+      justify-items: center;
     }
 
     @include mobile-width {
@@ -129,7 +129,14 @@
       width: 290px;
       min-height: 64px;
     }
+
+    &:hover {
+      border: 6px solid transparent;
+      border-image: linear-gradient(#d10a42, #00359f);
+      border-image-slice: 1;
+    }
   }
+
 
   &__desk {
     margin: 0;

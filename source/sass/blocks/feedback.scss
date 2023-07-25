@@ -1,5 +1,5 @@
 .feedback {
-  padding: 120px 0;
+  padding: 120px 0 0;
   background-color: $additional-background;
 
   &__tabs {
@@ -105,15 +105,18 @@
       font-weight: 500;
       font-size: 24px;
       color: #102654;
-      padding: 32px 0 14px 0;
+      padding: 32px 0 31px 0;
+      width: 760px;
 
       @include tablet-width {
-        padding: 32px 0 17px 0;
+        padding: 32px 0 31px 0;
+        width: 560px;
       }
 
       @include mobile-width {
         font-size: 18px;
-        padding: 20px 0 12px 0;
+        padding: 20px 0 20px 0;
+        width: 238px;
       }
     }
   }
@@ -122,6 +125,17 @@
     position: absolute;
     top: 25px;
     right: 0;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: $color-default-white;
+    background-image: url("../../img/svg/open-plus.svg");
+
+    @include mobile-width {
+      background-image: url("../../img/svg/open-plus-min.svg");
+    }
   }
 
   &__content {

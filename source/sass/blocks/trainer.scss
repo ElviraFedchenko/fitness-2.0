@@ -9,6 +9,18 @@
     padding-bottom: 70px;
   }
 
+  &__container {
+    position: relative;
+
+    @include tablet-width {
+      padding: 0 56px;
+    }
+
+    @include mobile-width {
+      padding: 0 32px;
+    }
+  }
+
   &__title {
     font-family: $alumni-sans-semi-bold;
     color: #102654;
@@ -16,6 +28,18 @@
     letter-spacing: 1.62px;
     margin: 0;
     padding-bottom: 48px;
+
+    @include tablet-width {
+      text-align: center;
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+
+    @include mobile-width {
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: 0.96px;
+    }
   }
 
   &__inner {
@@ -23,4 +47,74 @@
     display: flex;
   }
 
+  &__description {
+    position: relative;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  &__profile {
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    font-family: $roboto-condensed-bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-default-white;
+    transform: translateX(-50%);
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $color-default-white;
+    background-color: rgba(16, 38, 84, 0.89);
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    padding: 50px 20px 10px;
+    text-align: center;
+  }
+
+
+  &__name {
+    font-family: $roboto-condensed-bold;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__prof {
+    font-size: 16px;
+    line-height: 150%;
+    color: #b6bdcc;
+    margin: 0 0 30px;
+  }
+
+  &__list {
+    font-family: $roboto-condensed-regular;
+    margin: 0;
+    padding: 0 0 0 51px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__item {
+    margin-bottom: 13px;
+    list-style-type: disc;
+
+    &:hover .trainer__wrapper {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }

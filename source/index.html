@@ -17,8 +17,7 @@
   <link rel="preload" href="./fonts/roboto-v30-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/roboto-v30-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/roboto-v30-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -353,9 +352,8 @@
                   </div>
                 </div>
               </div>
-
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="trainer__button-prev swiper-button-prev"></div>
+              <div class="trainer__button-next swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -391,7 +389,7 @@
                 <p class="advantages__text">Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
             </div>
-            <div class="advantages__item">
+            <div class="advantages__item  advantages__item--comfort">
               <div class="advantages__amount">
                 <p class="advantages__number">350</p>
                 <p class="advantages__sub-number">мест</p>
@@ -401,7 +399,7 @@
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </div>
-            <div class="advantages__item">
+            <div class="advantages__item advantages__item--experience">
               <div class="advantages__amount">
                 <p class="advantages__number">5+</p>
                 <p class="advantages__sub-number">лет</p>
@@ -476,7 +474,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element is-active" data-accordion="element">
                     <h3>Как стать членом фитнес-центра?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">1</button>
+                    <button class="feedback__button feedback__button--closed" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -494,14 +492,14 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Где можно посмотреть расписание?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">2</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
                           <div class="feedback__item">
                             <p>Актуальное расписание групповых занятий в фитнес-клубе можете узнать на стойке
                               администрации
-                              иои
+                              или
                               посмотреть на сайте</p>
                           </div>
                         </div>
@@ -512,7 +510,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">3</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -529,13 +527,12 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">4</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
                           <div class="feedback__item">
-                            <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
-                            <p>В фитнес клубе работает более 20 тренеров с различными квалификациями в тм числе мастера
+                            <p>В фитнес клубе работает более 20 тренеров с различными квалификациями в том числе мастера
                               спорта
                             </p>
                           </div>
@@ -550,7 +547,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element is-active" data-accordion="element">
                     <h3>Занятия с тренером входят в абонемент?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">1</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -571,7 +568,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Можно ли заморозить абонемент?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">2</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -593,7 +590,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">3</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -611,7 +608,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">4</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -635,7 +632,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element is-active" data-accordion="element">
                     <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">1</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -653,7 +650,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">2</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -670,7 +667,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">3</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -687,7 +684,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Есть ли в центре детская комната?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">4</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -707,7 +704,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element is-active" data-accordion="element">
                     <h3>Что делать при первом посещении фитнес клуба?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">1</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -726,7 +723,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Правила клуба для родителей и детей до 16 лет</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">2</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -741,7 +738,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Может ли ребенок посещать детскую комнату, если у него нет клубной карты?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">3</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -758,7 +755,7 @@
                 <div class="feedback__accordion" data-accordion="parent" data-single="data-single">
                   <div class="feedback__element" data-accordion="element">
                     <h3>Я могу у вас тренироваться со своим тренером?</h3>
-                    <button class="feedback__button" type="button" data-accordion="button">4</button>
+                    <button class="feedback__button" type="button" data-accordion="button"></button>
                     <div class="feedback__content" data-accordion="content">
                       <div class="feedback__wrapper">
                         <div class="feedback__list">
@@ -780,7 +777,7 @@
       </section>
       <section class="reviews">
         <div class="container">
-          <h2  class="reviews__title">Отзывы</h2>
+          <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__wrapper">
             <div class="reviews__slider swiper">
               <div class="reviews__list swiper-wrapper">
@@ -823,9 +820,49 @@
               </div>
               <div class="reviews__button-prev swiper-button-prev"></div>
               <div class="reviews__button-next swiper-button-next"></div>
+            </div>
+          </div>
+      </section>
+      <section class="connection">
+        <div class="connection__wrapper">
+          <div class="connection__form">
+            <h2 class="connection__form-title">Бесплатное занятие</h2>
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form__wrapper">
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <input type="text" id="user-name" name="name" placeholder="Имя" required=""
+                  pattern="^[a-zA-Zа-яА-Я\s]+$">
+                <label class="visually-hidden" for="user-phone">Телефон</label>
+                <input type="tel" id="user-phone" name="phone" placeholder="Телефон" title="+79991234567" required=""
+                  pattern="^\+?[\s\-\(\)0-9]{7,19}$">
+              </div>
+              <button class="form__button" type="submit">отправить</button>
+            </form>
+          </div>
+          <div class="connection__contact">
+            <h2 class="connection__contact-title">Контакты</h2>
+            <div class="connection__contact-wrapper">
+              <div class="connection__address">
+                <div class="connection__address-item">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+              <div class="connection__info">
+                <div class="connection__info-item">
+                  <h3>Телефон:</h3>
+                  <a class="connection__info-link" href="tel:88005555555">8-800-555-55-55</a>
+                </div>
+                <h3>Email:</h3>
+                <a class="connection__info-tel" href=" mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
     </main>
     <footer class="footer">
       <div class="container">
@@ -871,22 +908,22 @@
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" aria-label="Вконтакте">
-                  <svg width="25" height="25">
+                <a  class="social__link" href="#" aria-label="Вконтакте">
+                  <svg class="social__icon" width="25" height="25">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" aria-label="одноклассники">
-                  <svg width="25" height="25">
+                <a class="social__link" href="#" aria-label="одноклассники">
+                  <svg class="social__icon" width="25" height="25">
                     <use xlink:href="img/sprite.svg#ok"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" aria-label="reddit">
-                  <svg width="25" height="25">
+                <a class="social__link" href="#" aria-label="reddit">
+                  <svg class="social__icon" width="25" height="25">
                     <use xlink:href="img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
@@ -929,7 +966,6 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>
