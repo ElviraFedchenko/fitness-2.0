@@ -111,6 +111,13 @@
       color: #102654;
       padding-bottom: 25px;
       width: 660px;
+      letter-spacing: -0.3px;
+      padding-top: 8px;
+
+      @include tablet-width {
+        width: 560px;
+        padding-top: 14px;
+      }
 
       @include mobile-width {
         font-size: 14px;
@@ -124,6 +131,10 @@
     border-top: 1px solid rgba(28, 51, 116, 0.20);
     position: relative;
     width: 860px;
+
+    @include tablet-width {
+      width: 678px;
+    }
 
     @include mobile-width {
       width: 290px;
@@ -152,27 +163,113 @@
   }
 
   &__button {
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    font-family: $roboto-condensed-bold;
+    font-size: 22px;
+    color: #102654;
+    padding: 0;
+    letter-spacing: -0.3px;
+
+    @include desktop-width-only {
+      width: 100%;
+      padding: 32px 0;
+    }
+
+    @include tablet-width {
+      width: 100%;
+      padding: 32px 0;
+      letter-spacing: -0.3px;
+      width: 560px;
+    }
+
+    @include mobile-width {
+      max-width: 238px;
+      font-size: 16px;
+    }
+  }
+
+  &__element.is-active &__button {
+    padding: 32px 0 0;
+  }
+
+  &__button-svg {
     position: absolute;
     top: 25px;
     right: 0;
+    display: flex;
     width: 42px;
     height: 42px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    border: 0;
-    background-color: $color-default-white;
-    background-image: url("../../img/svg/open.svg");
+    border: 1px solid #102654;
+    border-radius: 50%;
+    color: #102654;
 
     @include mobile-width {
-      background-image: url("../../img/svg/open-plus-min.svg");
+      width: 32px;
+      height: 32px;
     }
 
-    &:active {
-      background-image: url("../../img/svg/close.svg");
+    & svg {
+      display: block;
+      transform: translateY(-1%);
 
       @include mobile-width {
-        background-image: url("../../img/svg/open-plus-min.svg");
+        width: 32px;
+        height: 32px;
       }
+    }
+  }
+
+  &__button-svg--close {
+    display: none;
+  }
+
+  &__element.is-active &__button-svg--close {
+    display: block;
+  }
+
+  &__element.is-active &__button-svg--open {
+    display: none;
+  }
+
+  &__element {
+    position: relative;
+    border-top: 1px solid rgba(16, 38, 84, 0.20);
+
+    &:hover .feedback__button-svg,
+    &:focus .feedback__button-svg {
+      background-color: #102654;
+      color: $color-default-white;
+    }
+
+    &:disabled+.feedback__button-svg {
+      opacity: 0.2;
+    }
+  }
+
+  &__element:last-child {
+    border-bottom: 1px solid rgba(16, 38, 84, 0.20);
+  }
+
+  &__element.is-active &__content {
+    @include desktop-width-only {
+      margin-top: 10px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__wrapper {
+    @include desktop-width-only {
+      font-size: 18px;
+    }
+
+    @include tablet-width {
+      font-size: 18px;
+    }
+
+    @include mobile-width {
+      font-size: 16px;
     }
   }
 
