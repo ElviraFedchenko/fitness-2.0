@@ -14,8 +14,8 @@ const checkTrainerSwiper = () => {
 
       // Navigation arrows
       navigation: {
-        nextEl: '.trainer__button-next',
-        prevEl: '.trainer__button-prev',
+        nextEl: '.trainer__arrow-next',
+        prevEl: '.trainer__arrow-prev',
       },
       // Включение/Отключение перетаскивания на ПК
       simulateTouch: false,
@@ -74,8 +74,8 @@ const checkReviewsSwiper = () => {
 
       // Navigation arrows
       navigation: {
-        nextEl: '.reviews__button-next',
-        prevEl: '.reviews__button-prev',
+        nextEl: '.reviews__arrow-next',
+        prevEl: '.reviews__arrow-prev',
       },
       spaceBetween: 60,
       slidesPerView: 1,

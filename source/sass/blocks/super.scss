@@ -1,10 +1,17 @@
 .super {
-  padding: 120px 0 106px 0;
+  padding: 120px 0 126px 0;
+
+  @include tablet-width {
+    padding: 105px 0 115px 0;
+  }
+
+  @include mobile-width {
+    padding: 105px 0 72px;
+  }
+
 
   &__wrapper {
-    background-color: $red-background;
     display: flex;
-    justify-content: space-between;
 
     @include mobile-width {
       flex-direction: column;
@@ -12,7 +19,6 @@
   }
 
   &__inner {
-    display: grid;
     display: grid;
     grid-template-columns: 201px 137px;
 
@@ -23,12 +29,15 @@
 
   &__promo {
     color: $color-default-white;
-    padding: 85px 79px 0 78px;
-    margin-bottom: 87px;
+    background-color: $red-background;
+    padding: 81px 86px 10px 76px;
 
     @include tablet-width {
-      padding: 44px 45px 0;
-      margin-bottom: 51px;
+      padding: 48px 43px 0;
+    }
+
+    @include mobile-width {
+      padding: 48px 43px 51px 43px;
     }
   }
 
@@ -38,56 +47,69 @@
     line-height: 96%;
     letter-spacing: 2.46px;
     text-transform: uppercase;
-    margin: 0;
+    margin: 6px 0 30px 14px;
 
     @include tablet-width {
       font-size: 48px;
       line-height: 96%;
       letter-spacing: 1.44px;
+      margin: 6px 0 8px 9px;
     }
   }
 
   &__date {
-    padding-left: 50px;
+    padding-left: 52px;
     font-family: $roboto-condensed-regular;
 
     @include tablet-width {
-      padding-left: 5px;
-      margin-left: 20px;
+      padding-left: 8px;
+      margin-left: 24px;
     }
   }
 
   &__description {
     font-family: $roboto-condensed-regular;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    margin-bottom: 55px;
+    margin-bottom: 48px;
 
     @include tablet-width {
-      font-size: 12px;
+      font-size: 11px;
       line-height: 150%;
-      margin-bottom: 36px;
+      margin-bottom: 29px;
     }
   }
 
   &__button {
     font-family: $roboto-condensed-bold;
     color: $color-default-white;
-    padding: 24px 5px;
+    padding: 18px 5px;
     border: 4px solid $color-default-white;
     display: block;
     text-transform: uppercase;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.6px;
 
     @include tablet-width {
       font-weight: 700;
-      font-size: 10px;
+      font-size: 8px;
       border: 2px solid $color-default-white;
-      padding: 12px 5px;
+      padding: 7px 5px;
+    }
+
+    &:hover,
+    &:focus {
+      border: 2px solid $color-default-white;
+      color: $color-default-white;
+      opacity: 0.8;
+    }
+
+    &:disabled {
+      color: $color-default-white;
+      opacity: 0.5;
     }
   }
 

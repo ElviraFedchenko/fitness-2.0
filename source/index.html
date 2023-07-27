@@ -35,7 +35,7 @@
               </picture>
             </a>
             <a class="main-nav__phone" href="tel:88005555555">
-              <span class="main-nav__desk">8 800 555-55-55</span>
+              <span class="main-nav__desk">8-800-555-55-55</span>
             </a>
           </div>
           <div class="main-nav__container">
@@ -323,7 +323,7 @@
                     <img src="img/trainer-3.jpg" width="260" height="294" srcset="img/trainer-3@2x.jpg 2x"
                       alt="Александр Пашков">
                   </picture>
-                  <div class="trainer__profile">Александр Пашков</div>
+                  <div class="trainer__profile">Александр&nbsp;Пашков</div>
                   <div class="trainer__wrapper">
                     <p class="trainer__name">Александр Пашков</p>
                     <p class="trainer__prof">CrossFit</p>
@@ -352,8 +352,18 @@
                   </div>
                 </div>
               </div>
-              <div class="trainer__button-prev swiper-button-prev"></div>
-              <div class="trainer__button-next swiper-button-next"></div>
+            </div>
+            <div class="trainer__arrows">
+              <button class="trainer__arrow trainer__arrow-prev swiper-arrow swiper-arrow--left" type="button" aria-label="Предыдущий слайд">
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <button class="trainer__arrow  trainer__arrow-next swiper-arrow swiper-arrow--right" type="button" aria-label="Следующий слайд">
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -362,14 +372,14 @@
         <div class="container">
           <h2 class="advantages__title">Наши преимущества</h2>
           <div class="advantages__list">
-            <div class="advantages__item advantages__item--line">
+            <div class="advantages__item advantages__item--line advantages__item-square">
               <div class="advantages__amount">
                 <p class="advantages__number">900</p>
                 <p class="advantages__sub-number">кв/м</p>
               </div>
               <div class="advantages__description">
                 <h3 class="advantages__desk">Площадь</h3>
-                <p>Занимайтесь без&nbsp;очередей и&nbsp;толпучки</p>
+                <p>Занимайтесь&nbsp;без&nbsp;очередей и&nbsp;толкучки</p>
               </div>
             </div>
             <div class="advantages__item  advantages__item--line">
@@ -377,16 +387,16 @@
                 <p class="advantages__number">70</p>
                 <p class="advantages__sub-number">машин</p>
               </div>
-              <div class="advantages__description">
+              <div class="advantages__description advantages__description--parking">
                 <h3 class="advantages__desk">Собственная парковка</h3>
-                <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+                <p>Вы&nbsp;всегда найдете место для своей&nbsp;машины на&nbsp;нашей парковке</p>
               </div>
             </div>
             <div class="advantages__item advantages__item--block">
               <div class="advantages__amount">
-                <p class="advantages__number advantages__number--block">100</p>
+                <p class="advantages__number--block">100</p>
                 <p class="advantages__training">Тренажёров</p>
-                <p class="advantages__text">Современные тренажеры на&nbsp;все группы мышц</p>
+                <p class="advantages__text advantages__text--block">Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
             </div>
             <div class="advantages__item  advantages__item--comfort">
@@ -394,7 +404,7 @@
                 <p class="advantages__number">350</p>
                 <p class="advantages__sub-number">мест</p>
               </div>
-              <div class="advantages__description">
+              <div class="advantages__description  advantages__description--block">
                 <h3 class="advantages__desk">Комфорт</h3>
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
@@ -421,7 +431,7 @@
                 <div>
                   <h3>Год</h3>
                   <p class="stock__price">4999</p>
-                  <p class="stock__desk">Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  <p class="stock__desk">Безлимитный&nbsp;абонемент в&nbsp;тренажерный зал</p>
                 </div>
                 <a class="stock__link" href="#">подробнее</a>
               </div>
@@ -442,13 +452,17 @@
             </div>
             <div class="stock__item">
               <div class="stock__card">
+                <div class="stock__card-wrapper">
                 <h3>Месяц бесплатно</h3>
-                <p>Приведи друга, получи абонемент в подарок</p>
+                <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+              </div>
                 <a class="stock__card-link" href="#">подробнее</a>
               </div>
               <div class="stock__card">
+                <div class="stock__card-wrapper">
                 <h3>Скидка 20%</h3>
-                <p>Корпоративный фитнес с командой</p>
+                <p>Корпоративный фитнес с&nbsp;командой</p>
+              </div>
                 <a class="stock__card-link" href="#">подробнее</a>
               </div>
             </div>
@@ -461,9 +475,9 @@
 
           <div class="feedback__tabs" data-tabs="parent" data-delay="300" data-height="max">
             <div class="feedback__controls" data-tabs="controls">
-              <button class="feedback__control feedback__control--active button" type="button" data-tabs="control"
-                data-index="0">Центр</button>
               <button class="feedback__control button" type="button" data-tabs="control"
+                data-index="0">Центр</button>
+              <button class="feedback__control  feedback__control--active  button" type="button" data-tabs="control"
                 data-index="1">Абонемент</button>
               <button class="feedback__control button" type="button" data-tabs="control" data-index="2">Услуги</button>
               <button class="feedback__control button" type="button" data-tabs="control" data-index="2">Правила</button>
@@ -818,8 +832,19 @@
                     в&nbsp;вечернее время нет очередей»</p>
                 </div>
               </div>
-              <div class="reviews__button-prev swiper-button-prev"></div>
-              <div class="reviews__button-next swiper-button-next"></div>
+            </div>
+
+            <div class="reviews__arrows">
+              <button class="reviews__arrow reviews__arrow-prev swiper-arrow swiper-arrow--left" type="button" aria-label="Предыдущий слайд">
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <button class="reviews__arrow reviews__arrow-next swiper-arrow swiper-arrow--right" type="button" aria-label="Следующий слайд">
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
       </section>
@@ -908,7 +933,7 @@
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a  class="social__link" href="#" aria-label="Вконтакте">
+                <a class="social__link" href="#" aria-label="Вконтакте">
                   <svg class="social__icon" width="25" height="25">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>

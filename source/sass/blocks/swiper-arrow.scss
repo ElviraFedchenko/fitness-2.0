@@ -1,0 +1,61 @@
+.swiper-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 2;
+  color: #102654;
+
+  @include desktop-width-only {
+    width: 56px;
+    height: 56px;
+    bottom: 117px;
+  }
+
+  @include tablet-width {
+    width: 56px;
+    height: 56px;
+    bottom: 126px;
+  }
+
+  @include mobile-width {
+    width: 32px;
+    height: 32px;
+    bottom: 120px;
+  }
+
+  &:hover {
+    border: 1px solid #102654;
+  }
+
+  &:active {
+    background-color: #102654;
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    opacity: 0.2;
+  }
+
+  & svg {
+    transform: translateX(-7%);
+
+    @include mobile-width {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
+  &--left {
+    left: -75px;
+  }
+
+  &--right {
+    transform: rotate(180deg);
+    right: -75px;
+  }
+}

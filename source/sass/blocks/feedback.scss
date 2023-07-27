@@ -1,14 +1,23 @@
 .feedback {
-  padding: 120px 0 0;
+  padding: 120px 0 114px;
   background-color: $additional-background;
+
+  @include tablet-width {
+    padding: 114px 0 69px;
+  }
+
+  @include mobile-width {
+    padding: 76px 0 0;
+  }
 
   &__tabs {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 40px;
+    gap: 12px;
 
     @include tablet-width {
       grid-template-columns: 1fr;
+      gap: 29px;
     }
   }
 
@@ -34,17 +43,17 @@
     font-family: $alumni-sans-semi-bold;
     font-size: 54px;
     letter-spacing: 1.62px;
-    margin: 0 0 39px;
+    margin: 0 0 59px;
 
     @include tablet-width {
-      margin: 0 0 40px;
+      margin: 0 0 54px;
       text-align: center;
       letter-spacing: 1.26px;
       font-size: 42px;
     }
 
     @include mobile-width {
-      margin: 0 0 30px;
+      margin: 0 0 38px;
       font-size: 32px;
       letter-spacing: 0.96px;
     }
@@ -53,7 +62,7 @@
   &__control {
     font-family: $roboto-condensed-regular;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: #102654;
     text-align: center;
     line-height: 100%;
@@ -70,11 +79,25 @@
 
     @include mobile-width {
       width: 141px;
+      font-size: 14px;
+      margin: 0;
+      padding: 14px 10px;
     }
 
     &:active {
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       color: $color-default-white;
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid #102654;
+      color: #102654;
+    }
+
+    &:disabled {
+      border: 1px solid rgba(16, 38, 84, 0.20);
+      color: #c8c9cc;
     }
   }
 
@@ -84,13 +107,15 @@
     p {
       margin: 0;
       font-family: $roboto-condensed-lite;
-      font-size: 18px;
+      font-size: 16px;
       color: #102654;
       padding-bottom: 25px;
+      width: 660px;
 
       @include mobile-width {
-        font-size: 16px;
+        font-size: 14px;
         padding-bottom: 20px;
+        width: 290px;
       }
     }
   }
@@ -98,14 +123,19 @@
   &__element {
     border-top: 1px solid rgba(28, 51, 116, 0.20);
     position: relative;
+    width: 860px;
+
+    @include mobile-width {
+      width: 290px;
+    }
 
     h3 {
       margin: 0;
       font-family: $roboto-condensed-regular;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 22px;
       color: #102654;
-      padding: 32px 0 31px 0;
+      padding: 37px 0 17px 0;
       width: 760px;
 
       @include tablet-width {
@@ -114,7 +144,7 @@
       }
 
       @include mobile-width {
-        font-size: 18px;
+        font-size: 16px;
         padding: 20px 0 20px 0;
         width: 238px;
       }
@@ -131,10 +161,18 @@
     background-repeat: no-repeat;
     border: 0;
     background-color: $color-default-white;
-    background-image: url("../../img/svg/open-plus.svg");
+    background-image: url("../../img/svg/open.svg");
 
     @include mobile-width {
       background-image: url("../../img/svg/open-plus-min.svg");
+    }
+
+    &:active {
+      background-image: url("../../img/svg/close.svg");
+
+      @include mobile-width {
+        background-image: url("../../img/svg/open-plus-min.svg");
+      }
     }
   }
 
