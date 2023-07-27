@@ -25,5 +25,19 @@
     fill: $color-default-black;
     background-color: $color-default-white;
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: #103aae;
+    }
+
+    &:active {
+      background-color: #102654;
+    }
+
+    &:disabled {
+      background-color: $color-default-white;
+      opacity: 0.3;
+    }
   }
 }

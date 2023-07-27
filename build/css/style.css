@@ -2581,13 +2581,28 @@ button,
 .content__button {
   position: absolute;
   background-color: transparent;
-  border: none;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+  fill: #ffffff;
+}
+.content__button:hover, .content__button:focus {
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #102654;
+  fill: #102654;
+}
+.content__button:disabled {
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #102654;
+  fill: #102654;
+  opacity: 0.5;
 }
 .content__button svg {
   position: relative;
@@ -2708,6 +2723,16 @@ button,
     font-size: 14px;
   }
 }
+.footer__link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.footer__link:focus {
+  border: 1px solid #ffffff;
+}
+.footer__link:disabled {
+  color: #ffffff;
+  opacity: 0.5;
+}
 .footer__logo {
   margin-right: 47px;
 }
@@ -2752,6 +2777,16 @@ button,
   fill: #000000;
   background-color: #ffffff;
   border-radius: 50%;
+}
+.social__icon:hover, .social__icon:focus {
+  background-color: #103aae;
+}
+.social__icon:active {
+  background-color: #102654;
+}
+.social__icon:disabled {
+  background-color: #ffffff;
+  opacity: 0.3;
 }
 
 .subscription {
@@ -4465,6 +4500,19 @@ button,
     width: 100%;
   }
 }
+.form input:hover {
+  background-color: inherit;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.form input:active, .form input:focus {
+  background-color: inherit;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.form input:disabled {
+  opacity: 0.5;
+}
 .form__button {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   color: #ffffff;
@@ -4478,6 +4526,22 @@ button,
   border: 3px solid #ffffff;
   width: 100%;
   cursor: pointer;
+}
+.form__button:hover, .form__button:focus {
+  background-color: #ffffff;
+  border: none;
+  color: #103aae;
+}
+.form__button:active {
+  background-color: #ffffff;
+  border: none;
+  color: #102654;
+}
+.form__button:disabled {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  opacity: 0.5;
 }
 
 .swiper-arrow {
