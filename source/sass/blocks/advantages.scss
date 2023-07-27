@@ -1,13 +1,13 @@
 .advantages {
   background-color: $additional-background;
-  padding: 108px 0 130px;
+  padding: 130px 0 130px;
 
   @include tablet-width {
-    padding: 91px 0 100px;
+    padding: 91px 0 50px;
   }
 
   @include mobile-width {
-    padding: 63px 0 70px;
+    padding: 72px 0 28px;
   }
 
   &__title {
@@ -17,7 +17,7 @@
     color: #102654;
     margin: 0;
     text-align: center;
-    padding-bottom: 56px;
+    padding-bottom: 74px;
 
     @include tablet-width {
       font-size: 42px;
@@ -36,8 +36,9 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-self: center;
-    margin: 0 60px;
     justify-items: center;
+    margin: 0 50px;
+
 
     @include tablet-width {
       grid-template-columns: repeat(2, 1fr);
@@ -54,8 +55,10 @@
   &__item {
     display: flex;
     min-height: 0;
-    padding-bottom: 10px;
-    padding-right: 10px;
+
+    @include tablet-width {
+      padding-bottom: 10px;
+    }
 
     &--line {
       border-bottom: 2px solid rgba(209, 10, 66, 0.20);
@@ -65,21 +68,35 @@
       }
     }
 
+    &--comfort {
+      margin-left: 30px;
+
+      @include tablet-width {
+        margin-left: 0;
+      }
+
+      @include mobile-width {
+        padding-top: 7px;
+      }
+    }
+
     &--comfort,
     &--experience {
       align-items: flex-end;
+      padding-bottom: -5px;
     }
+
 
     @include mobile-width {
       display: block;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 23px;
       padding-right: 0;
       padding-bottom: 12px;
     }
 
     &--block {
-      padding: 55px 20px 40px;
+      padding: 38px 20px 63px;
       background-color: #1c3374;
       color: $color-default-white;
       text-align: center;
@@ -93,29 +110,65 @@
         grid-row: 2/3;
         width: 442px;
         padding: 14px 115px 39px;
-        margin: 33px 0 56px;
+        margin: 33px 0 36px;
       }
 
       @include mobile-width {
         width: 100vw;
         margin-left: -15px;
-        padding: 40px 20px 39px;
+        padding: 25px 20px 47px;
       }
+    }
+  }
+
+  &__item-square {
+    padding-left: 27px;
+
+    @include tablet-width {
+      padding: 0;
+      margin-right: 59px;
+    }
+
+    @include mobile-width {
+      margin: 0;
+      padding-bottom: 33px;
     }
   }
 
   &__number {
     font-family: $roboto-condensed-bold;
-    font-size: 71px;
+    font-size: 68px;
     line-height: 150%;
+    background: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -27px;
 
     &--block {
-      font-size: 74px
+      font-family: $roboto-condensed-bold;
+      line-height: 150%;
+      font-size: 68px;
+
+      @include tablet-width {
+        font-size: 74px;
+        margin-bottom: -11px;
+      }
+
+      @include mobile-width {
+        font-size: 66px;
+      }
     }
 
     @include tablet-width {
       font-size: 58px;
       line-height: 150%;
+      margin-top: -8px;
+    }
+
+    @include mobile-width {
+      font-size: 53px;
+      margin-top: -14px;
     }
   }
 
@@ -124,52 +177,91 @@
     font-size: 14px;
     line-height: 150%;
     color: #2e35ac;
-    margin: -25px 0 0;
+    margin: -16px 0 0;
 
     @include tablet-width {
       margin: -20px 0 0;
     }
+
+    @include mobile-width {
+      font-size: 12px;
+      margin: -12px 0 0;
+    }
   }
 
   &__description {
-    margin-left: 30px;
+    margin-left: 23px;
+
+    @include tablet-width {
+      margin-left: 20px;
+    }
+
+    @include mobile-width {
+      margin-left: 2px;
+
+
+      &--block h3 {
+        margin-top: 10px;
+      }
+    }
 
     p {
       font-family: $roboto-condensed-lite;
-      font-size: 16px;
+      font-size: 14px;
       color: #102654;
       line-height: 140%;
+
+      @include mobile-width {
+        text-align: center;
+        max-width: 225px;
+        margin: 0 auto;
+      }
     }
   }
 
   &__training {
     font-family: $roboto-condensed-bold;
-    font-size: 26px;
-    padding-bottom: 50px;
+    font-size: 23px;
+    padding-bottom: 40px;
 
     @include tablet-width {
       padding: 0;
-      margin-bottom: 17px;
-      font-size: 22px;
+      margin-bottom: 22px;
+      font-size: 19px;
+    }
+
+    @include mobile-width {
+      margin-bottom: 14px;
     }
   }
 
   &__desk {
     font-family: $roboto-condensed-bold;
-    font-size: 22px;
-    line-height: 150%;
+    font-size: 19px;
+    line-height: 159%;
     color: #102654;
-    margin: 22px 0 5px;
+    margin: -5px 0 10px;
 
     @include tablet-width {
-      margin: 20px 0 5px;
-      font-size: 20px;
+      margin: 9px 0 3px;
+      font-size: 18px;
+    }
+
+    @include mobile-width {
+      margin: 9px 0 7px;
     }
   }
 
   &__text {
     font-family: $roboto-condensed-regular;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
+
+    &--block {
+      @include mobile-width {
+        width: 180px;
+        margin: 0 auto;
+      }
+    }
   }
 }

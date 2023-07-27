@@ -40,7 +40,7 @@
     min-height: 100%;
     padding: 60px 40px;
 
-    @include  mobile-width {
+    @include mobile-width {
       padding: 60px 16px;
     }
   }
@@ -58,13 +58,11 @@
 
   &__content {
     position: relative;
-
     width: 600px;
     padding: 40px;
-
     background-color: $color-default-white;
 
-    @include  mobile-width {
+    @include mobile-width {
       width: 100%;
       padding: 20px;
     }

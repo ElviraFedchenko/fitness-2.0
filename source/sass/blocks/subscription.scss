@@ -1,7 +1,7 @@
 .subscription {
   position: relative;
   background-color: $additional-background;
-  padding: 120px 0 120px 0;
+  padding: 120px 0;
   text-align: center;
 
   @include tablet-width {
@@ -19,7 +19,7 @@
   &__title {
     margin: 0;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     font-family: $alumni-sans-semi-bold;
     font-size: 54px;
     font-style: normal;
@@ -29,13 +29,13 @@
     color: #102654;
 
     @include tablet-width {
-      padding-bottom: 26px;
+      padding-bottom: 22px;
       font-size: 42px;
       letter-spacing: 1.26px;
     }
 
     @include mobile-width {
-      padding-bottom: 27px;
+      padding-bottom: 23px;
       font-size: 32px;
       letter-spacing: 0.96px;
     }
@@ -57,7 +57,7 @@
   &__control {
     border: none;
     font-family: $roboto-condensed-regular;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 150%;
     color: rgba(16, 38, 84, 0.50);
     background-color: transparent;
@@ -79,17 +79,26 @@
         bottom: -2px;
         left: 0;
         height: 2px;
-        width: 115%;
+        width: 100%;
         background-color: #d10a42;
+
+        @include mobile-width {
+          width: 115%;
+        }
       }
     }
 
-    @include mobile-width {
+    @include tablet-width {
       font-size: 16px;
+      margin-right: 51px;
+    }
+
+    @include mobile-width {
+      font-size: 14px;
       margin-right: 0;
+      padding: 0 0 15px;
     }
   }
-
 
   &__list {
     list-style: none;
@@ -120,12 +129,12 @@
     z-index: 1;
 
     @include tablet-width {
-      padding: 67px 5px 20px;
+      padding: 70px 5px 20px;
       width: 442px;
     }
 
     @include mobile-width {
-      padding: 54px 5px 20px;
+      padding: 48px 5px 60px;
       width: 290px;
       min-height: 64px;
     }
@@ -141,25 +150,29 @@
   &__desk {
     margin: 0;
     font-family: $roboto-condensed-bold;
-    font-size: 26px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    padding-bottom: 22px;
+    padding-bottom: 14px;
 
     @include mobile-width {
-      font-size: 22px;
-      padding-bottom: 20px;
+      font-size: 19px;
+      padding-bottom: 10px;
     }
   }
 
   &__action {
-    margin: 0 0 68px;
-    font-size: 16px;
+    margin: 0 0 67px;
+    font-size: 14px;
+
+    @include mobile-width {
+      margin: 0 0 57px;
+    }
   }
 
   @include mobile-width {
-    padding-bottom: 81px;
+    padding-bottom: 28px;
   }
 
   &__price {
@@ -167,16 +180,16 @@
     margin: 0;
     font-family: $roboto-condensed-bold;
     color: #103aae;
-    font-size: 60px;
-    padding-bottom: 59px;
+    font-size: 55px;
+    padding-bottom: 38px;
     display: inline-block;
-    line-height: 136%;
+    line-height: 151%;
     vertical-align: middle;
 
     @include mobile-width {
       display: inline-block;
-      font-size: 48px;
-      padding-bottom: 50px;
+      font-size: 44px;
+      padding-bottom: 34px;
     }
   }
 
@@ -184,24 +197,26 @@
     color: $color-default-black;
     position: absolute;
     opacity: 0.1;
-    font-size: 100px;
+    font-size: 79px;
     width: 203px;
     height: 69px;
     top: -17px;
     left: -13%;
 
     @include mobile-width {
-      width: 162px;
-      height: 55px;
-      font-size: 80px;
+      width: 167px;
+      height: 44px;
+      font-size: 68px;
+      top: -31px;
+      left: -7%;
     }
   }
 
   &__button {
     border: 2px solid #102654;
-    padding: 27px 44px;
+    padding: 19px 41px;
     font-family: $roboto-condensed-bold;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.6px;
     text-transform: uppercase;
@@ -212,13 +227,48 @@
       display: block;
       width: 206px;
       margin: 0 auto;
-      padding: 23px 10px;
+      padding: 18px 10px;
+    }
+
+    &:focus,
+    &:hover {
+      background: linear-gradient(151deg, #ed0233 0, #003eb7 100%);
+      color: $color-default-white;
+      border: none;
+    }
+
+    &:active {
+      background: linear-gradient(151deg, #ed0233 0, #003eb7 100%);
+      color: $color-default-white;
+      opacity: 0.7;
+      border: none;
+    }
+
+    &:disabled {
+      background: $color-default-white;
+      color: #102654;
+      opacity: 0.3;
+      border: 2px solid #102654;
     }
   }
 
   &__img {
     position: absolute;
-    bottom: 3px;
-    right: -68px;
+    bottom: -149px;
+    right: 0;
+
+    @include mobile-width {
+      display: none;
+    }
+
+    @include tablet-width {
+      bottom: -132px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

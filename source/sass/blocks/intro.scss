@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  padding: 120px 103px 120px 163px;
+  padding: 120px 102px 120px 162px;
   min-height: 756px;
   margin: 0 auto;
   display: flex;
@@ -12,12 +12,12 @@
     flex-direction: column;
     padding: 100px 45px 183px 45px;
     align-items: center;
-    gap: 50px;
+    gap: 43px;
   }
 
   @include mobile-width {
-    padding: 70px 15px 70px 15px;
-    gap: 40px;
+    padding: 64px 0 70px 0;
+    gap: 36px;
   }
 
   &__description {
@@ -32,6 +32,7 @@
     @include mobile-width {
       width: 100%;
       text-align: left;
+      padding: 0 15px;
     }
   }
 
@@ -41,12 +42,11 @@
     line-height: normal;
     letter-spacing: 1.44px;
     padding-top: 42px;
-    padding-bottom: 25px;
+    padding-bottom: 8px;
     margin: 0;
 
     @include tablet-width {
-      padding-top: 0;
-      padding-bottom: 6px;
+      padding: 0;
       font-size: 42px;
       letter-spacing: 1.26px;
     }
@@ -54,29 +54,45 @@
     @include mobile-width {
       font-size: 32px;
       letter-spacing: 0.96px;
+      padding-bottom: 5px;
     }
   }
 
   &__description h3 {
     font-family: $roboto-condensed-regular;
-    font-size: 18px;
+    font-size: 16px;
     color: $primary;
     margin: 0;
-    padding-bottom: 55px;
+    padding-bottom: 40px;
+
 
     @include tablet-width {
-      padding-bottom: 50px;
+      padding-bottom: 37px;
     }
 
-    @include mobile-width {}
+    @include mobile-width {
+      padding-bottom: 25px;
+    }
   }
 
   &__description p {
     font-family: $roboto-condensed-lite;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     margin: 0;
+    text-align: left;
+
+    @include tablet-width {
+      padding-right: 3px;
+      text-align: center;
+    }
+
+    @include mobile-width {
+      padding-right: 33px;
+      text-align: left;
+    }
   }
+
 
   &__text {
     padding-top: 7px;
@@ -97,6 +113,7 @@
 
     @include mobile-width {
       height: 313px;
+      width: 100%;
     }
   }
 }

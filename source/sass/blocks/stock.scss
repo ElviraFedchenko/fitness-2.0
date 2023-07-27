@@ -1,12 +1,12 @@
 .stock {
-  padding: 135px 0 120px;
+  padding: 155px 0 140px;
 
   @include tablet-width {
-    padding: 91px 0 100px;
+    padding: 140px 0 100px;
   }
 
   @include mobile-width {
-    padding: 63px 0 70px;
+    padding: 71px 0 73px;
     text-align: center;
   }
 
@@ -16,7 +16,15 @@
     font-size: 54px;
     color: #102654;
     text-align: center;
-    margin: 0 0 34px;
+    margin: 0 0 53px;
+
+    @include tablet-width {
+      font-size: 42px;
+    }
+
+    @include mobile-width {
+      font-size: 30px;
+    }
   }
 
   &__wrapper {
@@ -60,10 +68,11 @@
 
     @include mobile-width {
       display: block;
+      padding: 35px 45px 41px;
     }
 
     h3 {
-      font-size: 28px;
+      font-size: 26px;
       line-height: 156%;
       margin: 0 0 19px;
     }
@@ -71,15 +80,22 @@
 
   &__price {
     font-family: $roboto-condensed-bold;
-    font-size: 70px;
-    margin: 0 0 35px;
+    font-size: 64px;
+    margin: 0 0 43px;
+
+    @include mobile-width {
+      margin: 0 0 36px;
+    }
   }
 
   &__desk {
     font-family: $roboto-condensed-regular;
-    font-size: 18px;
-    line-height: 140%;
-    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 145%;
+
+    @include mobile-width {
+      padding-bottom: 30px;
+    }
   }
 
   &__item {
@@ -101,50 +117,78 @@
   }
 
   &__card {
-    padding: 35px 35px 40px;
+    padding: 26px 27px 22px;
     border: 7px solid;
     border-image: linear-gradient(#d10a42, #00359f);
     border-image-slice: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+
 
     h3 {
       font-family: $roboto-condensed-bold;
-      font-size: 26px;
+      font-size: 23px;
       color: #1c3374;
-      margin: 0 0 20px;
+      margin: 0 0 10px;
     }
 
     p {
       font-family: $roboto-condensed-regular;
-      font-size: 16px;
+      font-size: 14px;
       color: #1c3374;
-      margin: 0 0 80px;
+      margin: 0 0 63px;
 
       @include tablet-width {
-        margin: 0 0 57px;
+        margin: 0;
       }
 
       @include mobile-width {
-        margin: 0 0 35px;
+        margin: 0 0 21px;
       }
     }
 
     @include tablet-width {
-      padding: 35px;
+      padding: 25px 35px 25px 30px;
+      min-height: 211px;
     }
 
     @include mobile-width {
-      padding: 46px 46px 46px 50px;
+      display: block;
+      padding: 38px 35px 20px 35px;
     }
   }
 
   &__card-link {
     font-family: $roboto-condensed-bold;
     color: #1c3374;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     border-bottom: 1px solid #1c3374;
     padding-bottom: 3px;
+
+    @include tablet-width {
+      font-size: 10px;
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      color: #1c3374;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      color: #1c3374;
+      border: 2px solid #1c3374;
+      padding: 5px;
+    }
+
+    &:disabled {
+      color: #1c3374;
+      opacity: 0.3;
+    }
   }
 
   &__img img {
@@ -156,9 +200,25 @@
   &__link {
     font-family: $roboto-condensed-bold;
     color: $color-default-white;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.7px;
     text-transform: uppercase;
     border-bottom: 1px solid $color-default-white;
+
+    &:hover {
+      color: $color-default-white;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      color: $color-default-white;
+      border: 2px solid $color-default-white;
+      padding: 5px;
+    }
+
+    &:disabled {
+      color: $color-default-white;
+      opacity: 0.3;
+    }
   }
 }

@@ -1,16 +1,19 @@
 .main-nav {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background: conic-gradient(from 130.31deg at 18.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   min-height: 658px;
   color: $color-default-white;
   padding-top: 30px;
   padding-bottom: 47px;
 
   @include tablet-width {
+    background: conic-gradient(from 130.31deg at 20.03% 35.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 554px;
   }
 
   @include mobile-width {
+    background: conic-gradient(from 130.31deg at 35.03% 34.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 491px;
+    padding-top: 18px;
   }
 
   &__wrapper {
@@ -18,26 +21,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0 -12px 0;
 
     @include tablet-width {
-      padding-bottom: 25px;
+      padding-bottom: 33px;
     }
 
     @include mobile-width {
-     padding: 0;
+      padding: 0;
+      margin: 0;
     }
   }
 
   &__container {
     display: flex;
     position: relative;
-    justify-content: center;
   }
 
   &__phone {
     font-family: $alumni-sans-regular;
     font-size: 26px;
     color: $color-default-white;
+    letter-spacing: 0.78px;
+    margin-top: -10px;
+
+    @include tablet-width {
+      font-size: 23px;
+      margin-top: -3px;
+    }
+
+    @include mobile-width {
+      font-size: 18px;
+    }
   }
 
   &__img img {
@@ -60,16 +75,16 @@
     align-items: flex-end;
     padding-top: 106px;
     padding-right: 64px;
-    padding-left: 159px;
+    padding-left: 96px;
 
     @include tablet-width {
-      padding-top: 45px;
+      padding-top: 51px;
       padding-right: 30px;
       padding-left: 45px;
     }
 
     @include mobile-width {
-      padding-top: 80px;
+      padding-top: 70px;
       padding-left: 0;
       padding-right: 0;
     }
@@ -78,21 +93,24 @@
   &__city {
     font-family: $alumni-sans-semi-bold;
     font-size: 48px;
-    letter-spacing: 1.44px;
-    line-height: 58px;
+    letter-spacing: 0.44px;
+    line-height: 69px;
     text-align: right;
-    margin: 0;
+    text-transform: uppercase;
+    margin: 0 49px 9px 0;
 
     @include tablet-width {
       font-size: 34px;
       line-height: normal;
       letter-spacing: 1.02px;
+      margin: 0 0 5px 0;
     }
 
     @include mobile-width {
       font-size: 28px;
       line-height: normal;
       letter-spacing: 0.84px;
+      margin: 0 0 13px;
     }
   }
 
@@ -102,33 +120,40 @@
     font-weight: 600;
     font-size: 92px;
     text-align: right;
-    letter-spacing: 4.6px;
+    letter-spacing: 0.05em;
     line-height: 110px;
     max-width: 300px;
-    margin: 0 0 65px;
+    margin: 0 0 46px;
+    text-transform: uppercase;
 
     @include tablet-width {
       font-size: 72px;
       line-height: normal;
       letter-spacing: 3.6px;
-      margin-bottom: 48px;
+      margin-bottom: 35px;
+      text-transform: none;
     }
 
     @include mobile-width {
       font-size: 72px;
       line-height: normal;
       letter-spacing: 3.6px;
+      margin-bottom: 22px;
     }
   }
 
   &__description {
     position: absolute;
-    bottom: 193px;
-    left: 82px;
+    bottom: 194px;
+    left: 21px;
 
     @include tablet-width {
       bottom: 146px;
       left: 0;
+    }
+
+    @include mobile-width {
+      bottom: 119px;
     }
   }
 
@@ -137,13 +162,13 @@
     font-weight: 400;
     text-align: right;
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 150%;
   }
 
   &__toggle {
     background: transparent;
-    padding: 24px 56px;
+    padding: 15px 51px;
     text-transform: uppercase;
     font-family: $roboto-condensed-bold;
     font-size: 12px;
@@ -154,13 +179,31 @@
     text-align: center;
 
     @include tablet-width {
-      padding: 18px 10px;
+      padding: 15px 10px;
       min-width: 184px;
     }
 
     @include mobile-width {
       min-width: 100%;
-      padding: 19px 10px;
+      padding: 14px 10px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-default-white;
+      color: #103aae;
+    }
+
+    &:active {
+      background-color: $color-default-white;
+      color: #102654;
+    }
+
+    &:disabled {
+      background: transparent;
+      border: 4px solid $color-default-white;
+      color: $color-default-white;
+      opacity: 0.5;
     }
   }
 }

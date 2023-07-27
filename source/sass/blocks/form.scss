@@ -16,12 +16,12 @@
     width: 410px;
 
     @include tablet-width {
-      max-width: 472px;
+      width: 472px;
     }
 
     @include mobile-width {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 14px;
     }
   }
 
@@ -30,7 +30,7 @@
     border: 0;
     padding: 7px 0;
     background-color: inherit;
-    font-size: 14px;
+    font-size: 12px;
     color: $color-default-white;
     border-bottom: 1px solid #74819c;
     width: 190px;
@@ -51,7 +51,7 @@
     background-color: inherit;
     padding: 16px 10px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.7px;
     text-transform: uppercase;

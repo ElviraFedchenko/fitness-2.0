@@ -24,23 +24,22 @@
     }
 
     @include mobile-width {
-      padding: 70px 15px;
+      padding: 60px 15px 67px;
     }
   }
 
   &__form-title {
     font-family: $alumni-sans-bold;
     font-size: 54px;
-    padding-right: 43px;
     font-weight: 800;
     line-height: 156%;
     letter-spacing: 1.62px;
-    margin: 0 0 24px;
+    margin: 0 0 16px;
 
     @include tablet-width {
       font-size: 42px;
       font-weight: 700;
-      margin: 0 0 50px;
+      margin: 0 0 22px;
       letter-spacing: 1.26px;
     }
 
@@ -48,21 +47,7 @@
       font-family: $alumni-sans-semi-bold;
       font-size: 32px;
       letter-spacing: 0.96px;
-      margin: 0 0 50px;
-    }
-  }
-
-  &__contact {
-    padding: 56px 120px 70px;
-    color: #102654;
-    border-top: 1px solid #74819c;
-
-    @include tablet-width {
-      padding: 70px 132px;
-    }
-
-    @include mobile-width {
-      padding: 70px 15px;
+      margin: 0 0 30px;
     }
   }
 
@@ -72,18 +57,18 @@
     letter-spacing: 1.62px;
     color: #102654;
     line-height: 156%;
-    margin: 0 0 43px;
+    margin: 0 0 29px;
 
     @include tablet-width {
       font-size: 42px;
       letter-spacing: 1.26px;
-      margin: 0 0 50px;
+      margin: 0 0 25px;
     }
 
     @include mobile-width {
       font-size: 32px;
       letter-spacing: 0.96px;
-      margin: 0 0 50px;
+      margin: 0 0 33px;
     }
   }
 
@@ -131,38 +116,52 @@
     margin-bottom: 21px;
 
     @include mobile-width {
-      margin-bottom: 18px;
+      margin-bottom: 24px;
     }
   }
 
   &__contact {
-    h3 {
-      font-family: $roboto-condensed-bold;
-      line-height: 150%;
-      margin: 0 0 2px;
+    padding: 46px 120px 35px;
+    color: #102654;
+    border-top: 1px solid #74819c;
 
-      @include tablet-width {
-        font-size: 20px;
-        line-height: 153%;
-      }
-
-      @include mobile-width {
-        margin: 0 0 5px;
-      }
+    @include tablet-width {
+      padding: 54px 131px 59px;
     }
 
-    p {
-      font-family: $roboto-condensed-regular;
-      margin: 0;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 21px;
-      color: #102654;
+    @include mobile-width {
+      padding: 57px 15px;
+    }
+  }
 
-      @include tablet-width {
-        font-size: 18px;
-        line-height: 153%;
-      }
+  h3 {
+    font-family: $roboto-condensed-bold;
+    line-height: 150%;
+    margin: 0 0 4px;
+    font-size: 14px;
+
+    @include tablet-width {
+      font-size: 18px;
+      line-height: 153%;
+      margin: 0 0 9px;
+    }
+
+    @include mobile-width {
+      margin: 0 0 6px;
+    }
+  }
+
+  p {
+    font-family: $roboto-condensed-regular;
+    margin: 0;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: #102654;
+
+    @include tablet-width {
+      font-size: 16px;
+      line-height: 153%;
     }
   }
 
@@ -177,7 +176,7 @@
   &__info-link {
     font-family: $roboto-condensed-regular;
     line-height: 153%;
-    font-size: 13px;
+    font-size: 12px;
 
     @include tablet-width {
       font-size: 16px;
@@ -187,16 +186,20 @@
   &__info-tel {
     font-family: $roboto-condensed-regular;
     display: block;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 12px;
     color: #102654;
-    margin-top: -5px;
+    margin-top: -2px;
     padding: 5px 0;
     line-height: 153%;
 
     @include tablet-width {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 153%;
+      margin-top: -11px;
+    }
+
+    @include mobile-width {
+      margin: 0 0 -3px;
     }
   }
 }
