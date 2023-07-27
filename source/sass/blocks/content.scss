@@ -52,11 +52,29 @@
   &__button {
     position: absolute;
     background-color: transparent;
-    border: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid $additional-gradient;
+    fill: $color-default-white;
+
+    &:hover,
+    &:focus {
+      background-color: $color-default-white;
+      border-radius: 50%;
+      border: 2px solid #102654;
+      fill: #102654;
+    }
+
+    &:disabled {
+      background-color: $color-default-white;
+      border-radius: 50%;
+      border: 2px solid #102654;
+      fill: #102654;
+      opacity: 0.5;
+    }
   }
 
   &__button svg {
