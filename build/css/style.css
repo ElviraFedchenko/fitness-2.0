@@ -3652,19 +3652,19 @@ button,
   margin-top: -27px;
   letter-spacing: -2.4px;
 }
-.advantages__number--block {
+.advantages__number-block {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   line-height: 150%;
   font-size: 68px;
 }
 @media (max-width: 1199px) {
-  .advantages__number--block {
+  .advantages__number-block {
     font-size: 74px;
     margin-bottom: -11px;
   }
 }
 @media (max-width: 767px) {
-  .advantages__number--block {
+  .advantages__number-block {
     font-size: 66px;
   }
 }
