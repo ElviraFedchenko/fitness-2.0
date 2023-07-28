@@ -3,7 +3,7 @@
   padding: 130px 0 130px;
 
   @include tablet-width {
-    padding: 91px 0 50px;
+    padding: 105px 0 85px;
   }
 
   @include mobile-width {
@@ -110,7 +110,7 @@
         grid-row: 2/3;
         width: 442px;
         padding: 14px 115px 39px;
-        margin: 33px 0 36px;
+        margin: 34px 0 36px;
       }
 
       @include mobile-width {
@@ -144,6 +144,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: -27px;
+    letter-spacing: -2.4px;
 
     &--block {
       font-family: $roboto-condensed-bold;
@@ -164,6 +165,7 @@
       font-size: 58px;
       line-height: 150%;
       margin-top: -8px;
+      letter-spacing: -2.74px;
     }
 
     @include mobile-width {
@@ -190,10 +192,10 @@
   }
 
   &__description {
-    margin-left: 23px;
+    margin-left: 30px;
 
     @include tablet-width {
-      margin-left: 20px;
+      margin-left: 27px;
     }
 
     @include mobile-width {
@@ -226,7 +228,7 @@
 
     @include tablet-width {
       padding: 0;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       font-size: 19px;
     }
 
@@ -243,7 +245,7 @@
     margin: -5px 0 10px;
 
     @include tablet-width {
-      margin: 9px 0 3px;
+      margin: 6px 0 5px;
       font-size: 18px;
     }
 

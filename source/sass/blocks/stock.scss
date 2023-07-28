@@ -2,11 +2,11 @@
   padding: 155px 0 140px;
 
   @include tablet-width {
-    padding: 140px 0 100px;
+    padding: 105px 0 100px;
   }
 
   @include mobile-width {
-    padding: 71px 0 73px;
+    padding: 70px 0 73px;
     text-align: center;
   }
 
@@ -20,10 +20,12 @@
 
     @include tablet-width {
       font-size: 42px;
+      margin: 0 0 55px;
     }
 
     @include mobile-width {
       font-size: 30px;
+      margin: 0 0 52px;
     }
   }
 
@@ -47,13 +49,13 @@
     @include tablet-width {
       grid-template-columns: 280px 399px;
       justify-self: center;
-      margin-bottom: 32px;
+      margin-bottom: 30px;
     }
 
     @include mobile-width {
       grid-template-columns: 1fr;
       width: 100%;
-      margin-bottom: 28px;
+      margin-bottom: 31px;
     }
   }
 
@@ -82,6 +84,7 @@
     font-family: $roboto-condensed-bold;
     font-size: 64px;
     margin: 0 0 43px;
+    letter-spacing: -1.4px;
 
     @include mobile-width {
       margin: 0 0 36px;
@@ -156,7 +159,7 @@
 
     @include mobile-width {
       display: block;
-      padding: 38px 35px 20px 35px;
+      padding: 36px 35px 20px 35px;
     }
   }
 

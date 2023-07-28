@@ -7,7 +7,7 @@
   }
 
   @include mobile-width {
-    padding: 76px 0 0;
+    padding: 76px 0 22px;
   }
 
   &__tabs {
@@ -109,20 +109,21 @@
       font-family: $roboto-condensed-lite;
       font-size: 16px;
       color: #102654;
-      padding-bottom: 25px;
+      padding-bottom: 16px;
       width: 660px;
       letter-spacing: -0.3px;
       padding-top: 8px;
 
       @include tablet-width {
-        width: 560px;
-        padding-top: 14px;
+        width: 538px;
+        padding-top: 6px;
       }
 
       @include mobile-width {
         font-size: 14px;
-        padding-bottom: 20px;
+        padding-bottom: 0;
         width: 290px;
+        line-height: 165%;
       }
     }
   }
@@ -187,11 +188,27 @@
     @include mobile-width {
       max-width: 238px;
       font-size: 16px;
+      line-height: 132%;
+      padding: 23px 0 17px;
     }
+
+  &--last {
+    @include tablet-width {
+      padding: 27px 0;
+    }
+  }
   }
 
   &__element.is-active &__button {
-    padding: 32px 0 0;
+    padding: 34px 0 0;
+
+    @include tablet-width {
+      padding: 31px 0 0;
+    }
+
+    @include mobile-width {
+      padding: 20px 0 0;
+    }
   }
 
   &__button-svg {
@@ -208,6 +225,7 @@
     @include mobile-width {
       width: 32px;
       height: 32px;
+      top: 35px;
     }
 
     & svg {
@@ -256,6 +274,11 @@
     @include desktop-width-only {
       margin-top: 10px;
       margin-bottom: 11px;
+    }
+
+    @include tablet-width {
+      margin-top: 7px;
+      margin-bottom: 14px;
     }
   }
 

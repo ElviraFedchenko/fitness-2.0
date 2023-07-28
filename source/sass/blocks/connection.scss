@@ -96,7 +96,7 @@
 
     @include mobile-width {
       border: 0;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
   }
 
@@ -130,7 +130,7 @@
     }
 
     @include mobile-width {
-      padding: 57px 15px;
+      padding: 57px 15px 55px;
     }
   }
 
