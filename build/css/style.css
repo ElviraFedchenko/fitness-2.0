@@ -2875,23 +2875,6 @@ button,
 .subscription__control:last-child {
   margin-right: 0;
 }
-.subscription__control--active {
-  color: #102654;
-}
-.subscription__control--active::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #d10a42;
-}
-@media (max-width: 767px) {
-  .subscription__control--active::before {
-    width: 115%;
-  }
-}
 @media (max-width: 1199px) {
   .subscription__control {
     font-size: 16px;
@@ -2904,6 +2887,23 @@ button,
     margin-right: 0;
     padding: 0 0 15px;
   }
+}
+.subscription__control.is-active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #d10a42;
+}
+@media (max-width: 767px) {
+  .subscription__control.is-active::before {
+    width: 115%;
+  }
+}
+.subscription__control.is-active {
+  color: #102654;
 }
 .subscription__list {
   list-style: none;
@@ -2937,7 +2937,7 @@ button,
   min-height: 448px;
   padding: 59px 5px 20px;
   text-align: center;
-  z-index: 1;
+  z-index: 100;
 }
 @media (max-width: 1199px) {
   .subscription__item {
