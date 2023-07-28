@@ -28,7 +28,7 @@
     margin-right: 10px;
 
     @include tablet-width {
-      margin-right: 24px;
+      margin-right: 27px;
     }
 
     @include mobile-width {
@@ -80,6 +80,7 @@
 
     @include tablet-width {
       padding: 10px 0;
+      font-size: 13px;
     }
 
     @include mobile-width {
