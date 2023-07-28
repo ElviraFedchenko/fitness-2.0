@@ -1,9 +1,9 @@
 .feedback {
-  padding: 120px 0 114px;
+  padding: 120px 0 89px;
   background-color: $additional-background;
 
   @include tablet-width {
-    padding: 114px 0 69px;
+    padding: 114px 0 43px;
   }
 
   @include mobile-width {
@@ -104,6 +104,18 @@
   &__wrapper {
     margin-left: 40px;
 
+    @include desktop-width-only {
+      font-size: 18px;
+    }
+
+    @include tablet-width {
+      font-size: 18px;
+    }
+
+    @include mobile-width {
+      font-size: 16px;
+    }
+
     p {
       margin: 0;
       font-family: $roboto-condensed-lite;
@@ -132,6 +144,17 @@
     border-top: 1px solid rgba(28, 51, 116, 0.20);
     position: relative;
     width: 860px;
+
+
+    &:hover .feedback__button-svg,
+    &:focus .feedback__button-svg {
+      background-color: #102654;
+      color: $color-default-white;
+    }
+
+    &:disabled + .feedback__button-svg {
+      opacity: 0.2;
+    }
 
     @include tablet-width {
       width: 678px;
@@ -179,7 +202,6 @@
     }
 
     @include tablet-width {
-      width: 100%;
       padding: 32px 0;
       letter-spacing: -0.3px;
       width: 560px;
@@ -192,11 +214,11 @@
       padding: 23px 0 17px;
     }
 
-  &--last {
-    @include tablet-width {
-      padding: 27px 0;
+    &--last {
+      @include tablet-width {
+        padding: 27px 0;
+      }
     }
-  }
   }
 
   &__element.is-active &__button {
@@ -251,21 +273,6 @@
     display: none;
   }
 
-  &__element {
-    position: relative;
-    border-top: 1px solid rgba(16, 38, 84, 0.20);
-
-    &:hover .feedback__button-svg,
-    &:focus .feedback__button-svg {
-      background-color: #102654;
-      color: $color-default-white;
-    }
-
-    &:disabled+.feedback__button-svg {
-      opacity: 0.2;
-    }
-  }
-
   &__element:last-child {
     border-bottom: 1px solid rgba(16, 38, 84, 0.20);
   }
@@ -279,20 +286,6 @@
     @include tablet-width {
       margin-top: 7px;
       margin-bottom: 14px;
-    }
-  }
-
-  &__wrapper {
-    @include desktop-width-only {
-      font-size: 18px;
-    }
-
-    @include tablet-width {
-      font-size: 18px;
-    }
-
-    @include mobile-width {
-      font-size: 16px;
     }
   }
 
