@@ -47,10 +47,15 @@
     border-bottom: 2px solid rgba(120, 120, 120, 0.20);
     display: inline-block;
 
+    @include tablet-width {
+      margin-bottom: 44px;
+    }
+
     @include mobile-width {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 33px;
     }
   }
 
@@ -121,20 +126,21 @@
     box-sizing: border-box;
     background-color: $color-default-white;
     font-family: $roboto-condensed-regular;
+    border: 6px solid $color-default-white;
     color: #102654;
     width: 360px;
     min-height: 448px;
-    padding: 64px 5px 20px;
+    padding: 59px 5px 20px;
     text-align: center;
     z-index: 1;
 
     @include tablet-width {
-      padding: 70px 5px 20px;
+      padding: 60px 5px 20px;
       width: 442px;
     }
 
     @include mobile-width {
-      padding: 48px 5px 60px;
+      padding: 48px 5px 48px;
       width: 290px;
       min-height: 64px;
     }
@@ -172,7 +178,7 @@
   }
 
   @include mobile-width {
-    padding-bottom: 28px;
+    padding-bottom: 70px;
   }
 
   &__price {
@@ -197,18 +203,18 @@
     color: $color-default-black;
     position: absolute;
     opacity: 0.1;
-    font-size: 79px;
+    font-size: 89px;
     width: 203px;
     height: 69px;
-    top: -17px;
-    left: -13%;
+    top: -27px;
+    left: -10%;
 
     @include mobile-width {
       width: 167px;
       height: 44px;
-      font-size: 68px;
-      top: -31px;
-      left: -7%;
+      font-size: 70px;
+      top: -20px;
+      left: -13%;
     }
   }
 
@@ -262,7 +268,7 @@
     }
 
     @include tablet-width {
-      bottom: -132px;
+      bottom: -125px;
     }
 
     img {

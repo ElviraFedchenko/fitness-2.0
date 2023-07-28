@@ -1,12 +1,12 @@
 .reviews {
-  padding: 140px 0 121px;
+  padding: 146px 0 121px;
 
   @include tablet-width {
-    padding: 105px 0 100px;
+    padding: 105px 0 97px;
   }
 
   @include mobile-width {
-    padding: 54px 0 70px;
+    padding: 70px 0 70px;
   }
 
   &__title {
@@ -63,7 +63,7 @@
     margin-top: -4px;
 
     @include mobile-width {
-      margin-top: 11px;
+      margin-top: 15px;
       padding-left: 10px;
     }
   }
