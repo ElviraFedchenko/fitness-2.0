@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './vendor/init-tabs';
 import {initAccordions} from './vendor/init-accordion';
-import {checkReviewsSwiper, checkTrainerSwiper} from './vendor.js';
+import {initReviewsSwiper, initTrainerSwiper} from './vendor.js';
 
 // ---------------------------------
 
@@ -15,8 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   initTabs();
   initAccordions();
-  checkReviewsSwiper();
-  checkTrainerSwiper();
+  initReviewsSwiper();
+  initTrainerSwiper();
 
   // Modules
   // ---------------------------------

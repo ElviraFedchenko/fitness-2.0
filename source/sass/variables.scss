@@ -8,19 +8,24 @@ $color-default-white: #ffffff;
 $color-transparent: rgba(255, 255, 255, 0);
 $additional-background: #f8f9fc;
 $light-grey: #e8e8e8;
-$additional-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-neon-blue: #2c39f2;
 $color-torch-red: #ff1553;
-$primary: #102654;
+$color-sapphire: #102654;
 $red-background: #ed0233;
+$color-crimson: rgba(209, 10, 66, 0.20);
+$color-border: rgba(16, 38, 84, 0.20);
+$color-stroke: rgba(120, 120, 120, 0.20);
+$color-sapphire-opacity: rgba(16, 38, 84, 0.50);
+$color-resolution-blue: rgba(28, 51, 116, 0.20);
 
 // Gradient
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$additional-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 
 // Typography
 // ---------------------------------
