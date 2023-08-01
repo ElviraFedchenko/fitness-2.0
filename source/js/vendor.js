@@ -8,7 +8,7 @@ import './vendor/init-tabs';
 const trainerSwiper = document.querySelector('.trainer__slider');
 const reviewsSwiper = document.querySelector('.reviews__slider');
 
-const checkTrainerSwiper = () => {
+const initTrainerSwiper = () => {
   if (trainerSwiper) {
     const swiper = new Swiper(trainerSwiper, {
 
@@ -68,7 +68,7 @@ const checkTrainerSwiper = () => {
 };
 
 
-const checkReviewsSwiper = () => {
+const initReviewsSwiper = () => {
   if (reviewsSwiper) {
     const swiper = new Swiper(reviewsSwiper, {
 
@@ -83,4 +83,4 @@ const checkReviewsSwiper = () => {
   }
 };
 
-export {checkReviewsSwiper, checkTrainerSwiper};
+export {initReviewsSwiper, initTrainerSwiper};

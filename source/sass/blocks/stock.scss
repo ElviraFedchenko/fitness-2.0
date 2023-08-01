@@ -35,8 +35,12 @@
     gap: 40px;
 
     @include tablet-width {
+      gap: 28px;
+    }
+
+    @include mobile-width {
       grid-template-columns: 1fr;
-      gap: 0;
+      gap: 30px;
     }
   }
 
@@ -45,9 +49,11 @@
     display: grid;
     grid-template-columns: 280px 1fr;
     background-color: $red-background;
+    grid-row: span 2;
 
     @include tablet-width {
-      grid-template-columns: 280px 399px;
+      grid-row: span 1;
+      grid-column: 1/-1;
       justify-self: center;
       margin-bottom: 30px;
     }
@@ -98,24 +104,6 @@
 
     @include mobile-width {
       padding-bottom: 30px;
-    }
-  }
-
-  &__item {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
-
-    @include tablet-width {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      gap: 28px;
-      justify-self: center;
-    }
-
-    @include mobile-width {
-      grid-template-columns: 1fr;
-      gap: 30px;
     }
   }
 
@@ -184,7 +172,7 @@
 
     &:focus {
       color: #1c3374;
-      border: 2px solid #1c3374;
+      outline: 2px solid #1c3374;
       padding: 5px;
     }
 

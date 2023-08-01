@@ -34,20 +34,22 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr min-content 1fr;
+    grid-template-columns: repeat(3, 1fr);
     align-self: center;
     justify-items: center;
     margin: 0 50px;
+    gap: 65px 10px;
 
 
     @include tablet-width {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, min-content);
+      gap: 27px 30px;
       margin: 0;
     }
 
     @include mobile-width {
       display: block;
+      gap: 20px;
       margin: 0;
     }
   }
@@ -61,7 +63,8 @@
     }
 
     &--line {
-      border-bottom: 2px solid rgba(209, 10, 66, 0.20);
+      border-bottom: 2px solid $color-crimson;
+      padding-bottom: 65px;
 
       @include tablet-width {
         border-bottom: none;
@@ -83,7 +86,6 @@
     &--comfort,
     &--experience {
       align-items: flex-end;
-      padding-bottom: -5px;
     }
 
 
@@ -101,7 +103,7 @@
       color: $color-default-white;
       text-align: center;
       width: 240px;
-      margin: 0 60px;
+      margin: 0 40px;
       grid-column: 2/3;
       grid-row: 1/3;
 
@@ -137,19 +139,21 @@
 
   &__number {
     font-family: $roboto-condensed-bold;
-    font-size: 68px;
+    font-size: 70px;
     line-height: 150%;
     background: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
     background-clip: text;
+     /* stylelint-disable */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+     /* stylelint-enable */
     margin-top: -27px;
     letter-spacing: -2.4px;
 
     &-block {
       font-family: $roboto-condensed-bold;
       line-height: 150%;
-      font-size: 68px;
+      font-size: 70px;
 
       @include tablet-width {
         font-size: 74px;
@@ -192,7 +196,7 @@
   }
 
   &__description {
-    margin-left: 30px;
+    margin-left: 23px;
 
     @include tablet-width {
       margin-left: 27px;
@@ -239,10 +243,11 @@
 
   &__desk {
     font-family: $roboto-condensed-bold;
-    font-size: 19px;
+    font-size: 21px;
     line-height: 159%;
     color: #102654;
     margin: -5px 0 10px;
+    letter-spacing: -0.4px;
 
     @include tablet-width {
       margin: 6px 0 5px;

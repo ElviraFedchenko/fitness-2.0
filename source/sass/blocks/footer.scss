@@ -52,7 +52,6 @@
   }
 
   &__item img {
-    height: 15px;
     margin-right: 0;
     margin-bottom: 12px;
   }
@@ -61,17 +60,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    max-width: 460px;
 
     @include mobile-width {
       flex-direction: column;
-      height: 120px;
       margin-bottom: 8px;
+      display: block;
+      column-count: 2;
     }
   }
 
   &__link {
     font-family: $roboto-condensed-regular;
-    font-size: 14px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

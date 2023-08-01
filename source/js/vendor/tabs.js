@@ -218,6 +218,3 @@ export class Tabs {
     }
   }
 }
-
-
-

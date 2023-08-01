@@ -22,7 +22,7 @@
 
   &__description {
     width: 355px;
-    color: $primary;
+    color: $color-sapphire;
 
     @include tablet-width {
       width: 540px;
@@ -61,7 +61,7 @@
   &__description h3 {
     font-family: $roboto-condensed-regular;
     font-size: 16px;
-    color: $primary;
+    color: $color-sapphire;
     margin: 0;
     padding-bottom: 40px;
 
@@ -109,6 +109,7 @@
 
     @include tablet-width {
       height: 345px;
+      margin: 0 auto;
     }
 
     @include mobile-width {

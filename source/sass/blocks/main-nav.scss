@@ -125,6 +125,9 @@
     max-width: 300px;
     margin: 0 0 46px;
     text-transform: uppercase;
+    /* stylelint-disable */
+    -webkit-text-stroke: 2px $color-default-white;
+     /* stylelint-enable */
 
     @include tablet-width {
       font-size: 72px;

@@ -42,6 +42,7 @@
 
     @include mobile-width {
       height: 167px;
+      width: auto;
     }
   }
 
@@ -56,24 +57,40 @@
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    border-radius: 50%;
-    fill: $color-default-white;
+    border: none;
+    color: $color-default-white;
 
     &:hover,
-    &:focus {
-      background-color: $color-default-white;
-      border-radius: 50%;
-      border: 2px solid #102654;
-      fill: #102654;
+    &:active {
+      color: $color-default-black;
+      cursor: pointer;
     }
 
-    &:disabled {
-      background-color: $color-default-white;
-      border-radius: 50%;
-      border: 2px solid #102654;
-      fill: #102654;
-      opacity: 0.5;
+    &:hover circle:first-child,
+    &:active circle:first-child {
+      stroke: #030a1a;
+      stroke-opacity: 1;
     }
+
+    &:hover circle:nth-child(2),
+    &:active circle:nth-child(2) {
+      fill: transparent;
+    }
+
+    &--disabled {
+      color: $color-default-black;
+      opacity: 0.2;
+
+      & circle:first-child {
+        stroke: #030a1a;
+        stroke-opacity: 1;
+      }
+
+      & circle:nth-child(2) {
+        fill: transparent;
+      }
+    }
+
   }
 
   &__button svg {

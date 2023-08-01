@@ -1,24 +1,13 @@
 .trainer {
   padding-bottom: 105px;
+  position: relative;
 
   @include tablet-width {
-    padding-bottom: 100px;
+    padding: 0 56px 100px 56px;
   }
 
   @include mobile-width {
-    padding-bottom: 50px;
-  }
-
-  &__container {
-    position: relative;
-
-    @include tablet-width {
-      padding: 0 56px;
-    }
-
-    @include mobile-width {
-      padding: 0 32px;
-    }
+    padding: 0 32px 50px 32px;
   }
 
   &__slider {
@@ -82,6 +71,10 @@
     line-height: 150%;
     color: $color-default-white;
     transform: translateX(-50%);
+  }
+
+  &__description:hover .trainer__profile {
+    visibility: hidden;
   }
 
   &__wrapper {

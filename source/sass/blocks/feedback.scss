@@ -38,6 +38,11 @@
     }
   }
 
+&__item {
+  overflow-y: hidden;
+}
+
+
   &__title {
     color: #102654;
     font-family: $alumni-sans-semi-bold;
@@ -66,7 +71,7 @@
     color: #102654;
     text-align: center;
     line-height: 100%;
-    border: 1px solid rgba(16, 38, 84, 0.20);
+    border: 1px solid $color-border;
     background-color: $color-default-white;
     padding: 18px 10px;
     margin-bottom: 10px;
@@ -96,17 +101,22 @@
     }
 
     &:disabled {
-      border: 1px solid rgba(16, 38, 84, 0.20);
+      border: 1px solid $color-border;
       color: #c8c9cc;
     }
   }
 
+
+  &__control.is-active {
+    background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+    color: $color-default-white;
+    border: 1px solid transparent;
+  }
+
   &__wrapper {
     margin-left: 40px;
+    font-size: 18px;
 
-    @include desktop-width-only {
-      font-size: 18px;
-    }
 
     @include tablet-width {
       font-size: 18px;
@@ -141,7 +151,7 @@
   }
 
   &__element {
-    border-top: 1px solid rgba(28, 51, 116, 0.20);
+    border-top: 1px solid $color-resolution-blue;
     position: relative;
     width: 860px;
 
@@ -193,13 +203,11 @@
     font-family: $roboto-condensed-bold;
     font-size: 22px;
     color: #102654;
-    padding: 0;
     letter-spacing: -0.3px;
+    cursor: pointer;
+    width: 100%;
+    padding: 32px 0;
 
-    @include desktop-width-only {
-      width: 100%;
-      padding: 32px 0;
-    }
 
     @include tablet-width {
       padding: 32px 0;
@@ -274,14 +282,12 @@
   }
 
   &__element:last-child {
-    border-bottom: 1px solid rgba(16, 38, 84, 0.20);
+    border-bottom: 1px solid $color-border;
   }
 
   &__element.is-active &__content {
-    @include desktop-width-only {
-      margin-top: 10px;
-      margin-bottom: 11px;
-    }
+    margin-top: 10px;
+    margin-bottom: 11px;
 
     @include tablet-width {
       margin-top: 7px;
