@@ -39,7 +39,8 @@
   }
 
   &__phone {
-    font-family: $alumni-sans-regular;
+    font-family: $alumni-sans;
+    font-weight: 400;
     font-size: 26px;
     color: $color-default-white;
     letter-spacing: 0.78px;
@@ -91,8 +92,9 @@
   }
 
   &__city {
-    font-family: $alumni-sans-semi-bold;
+    font-family: $alumni-sans;
     font-size: 42px;
+    font-weight: 600;
     letter-spacing: 2.44px;
     line-height: 69px;
     text-align: right;
@@ -116,7 +118,7 @@
 
 
   &__title {
-    font-family: $alumni-sans-semi-bold;
+    font-family: $alumni-sans;
     font-weight: 600;
     font-size: 92px;
     text-align: right;
@@ -147,8 +149,8 @@
 
   &__description {
     position: absolute;
-    bottom: 194px;
-    left: 21px;
+    bottom: 188px;
+    left: 20px;
 
     @include tablet-width {
       bottom: 146px;
@@ -161,11 +163,11 @@
   }
 
   &__description p {
-    font-family: $roboto-condensed-regular;
+    font-family: $roboto-condensed;
     font-weight: 400;
     text-align: right;
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
   }
 
@@ -173,8 +175,8 @@
     background: transparent;
     padding: 15px 51px;
     text-transform: uppercase;
-    font-family: $roboto-condensed-bold;
-    font-size: 12px;
+    font-family: $roboto-condensed;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     color: $color-default-white;

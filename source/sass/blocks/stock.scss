@@ -11,12 +11,13 @@
   }
 
   &__title {
-    font-family: $alumni-sans-semi-bold;
+    font-family: $alumni-sans;
+    font-weight: 600;
     letter-spacing: 1.62px;
     font-size: 54px;
     color: #102654;
     text-align: center;
-    margin: 0 0 53px;
+    margin: 0 0 54px;
 
     @include tablet-width {
       font-size: 42px;
@@ -66,9 +67,10 @@
   }
 
   &__description {
-    font-family: $roboto-condensed-bold;
+    font-family: $roboto-condensed;
+    font-weight: 700;
     color: $color-default-white;
-    padding: 35px 45px 45px;
+    padding: 35px 45px 39px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,16 +82,17 @@
     }
 
     h3 {
-      font-size: 26px;
+      font-size: 28px;
       line-height: 156%;
       margin: 0 0 19px;
     }
   }
 
   &__price {
-    font-family: $roboto-condensed-bold;
-    font-size: 64px;
-    margin: 0 0 43px;
+    font-family: $roboto-condensed;
+    font-weight: 700;
+    font-size: 71px;
+    margin: 0 0 39px;
     letter-spacing: -1.4px;
 
     @include mobile-width {
@@ -98,8 +101,9 @@
   }
 
   &__desk {
-    font-family: $roboto-condensed-regular;
-    font-size: 16px;
+    font-family: $roboto-condensed;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 145%;
 
     @include mobile-width {
@@ -119,15 +123,17 @@
 
 
     h3 {
-      font-family: $roboto-condensed-bold;
-      font-size: 23px;
+      font-family: $roboto-condensed;
+      font-weight: 700;
+      font-size: 26px;
       color: #1c3374;
       margin: 0 0 10px;
     }
 
     p {
-      font-family: $roboto-condensed-regular;
-      font-size: 14px;
+      font-family: $roboto-condensed;
+      font-weight: 400;
+      font-size: 16px;
       color: #1c3374;
       margin: 0 0 63px;
 
@@ -152,9 +158,10 @@
   }
 
   &__card-link {
-    font-family: $roboto-condensed-bold;
+    font-family: $roboto-condensed;
+    font-weight: 700;
     color: #1c3374;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     border-bottom: 1px solid #1c3374;
@@ -189,9 +196,10 @@
   }
 
   &__link {
-    font-family: $roboto-condensed-bold;
+    font-family: $roboto-condensed;
+    font-weight: 700;
     color: $color-default-white;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.7px;
     text-transform: uppercase;
     border-bottom: 1px solid $color-default-white;

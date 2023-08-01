@@ -11,13 +11,14 @@
   }
 
   &__title {
-    font-family: $alumni-sans-semi-bold;
+    font-family: $alumni-sans;
+    font-weight: 600;
     font-size: 54px;
     letter-spacing: 1.62px;
     color: #102654;
     margin: 0;
     text-align: center;
-    padding-bottom: 74px;
+    padding-bottom: 75px;
 
     @include tablet-width {
       font-size: 42px;
@@ -39,7 +40,7 @@
     justify-items: center;
     margin: 0 50px;
     gap: 65px 10px;
-
+    grid-auto-flow: dense;
 
     @include tablet-width {
       grid-template-columns: repeat(2, 1fr);
@@ -64,7 +65,7 @@
 
     &--line {
       border-bottom: 2px solid $color-crimson;
-      padding-bottom: 65px;
+      padding-bottom: 66px;
 
       @include tablet-width {
         border-bottom: none;
@@ -113,7 +114,7 @@
         width: 442px;
         padding: 14px 115px 39px;
         margin: 34px 0 36px;
-      }
+  }
 
       @include mobile-width {
         width: 100vw;
@@ -124,7 +125,7 @@
   }
 
   &__item-square {
-    padding-left: 27px;
+    padding-left: 30px;
 
     @include tablet-width {
       padding: 0;
@@ -138,9 +139,10 @@
   }
 
   &__number {
-    font-family: $roboto-condensed-bold;
-    font-size: 70px;
+    font-family: $roboto-condensed;
+    font-size: 72px;
     line-height: 150%;
+    font-weight: 700;
     background: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
     background-clip: text;
      /* stylelint-disable */
@@ -151,7 +153,8 @@
     letter-spacing: -2.4px;
 
     &-block {
-      font-family: $roboto-condensed-bold;
+      font-family: $roboto-condensed;
+      font-weight: 700;
       line-height: 150%;
       font-size: 70px;
 
@@ -179,11 +182,12 @@
   }
 
   &__sub-number {
-    font-family: $roboto-condensed-regular;
+    font-family: $roboto-condensed;
+    font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #2e35ac;
-    margin: -16px 0 0;
+    margin: -23px 0 0;
 
     @include tablet-width {
       margin: -20px 0 0;
@@ -196,7 +200,7 @@
   }
 
   &__description {
-    margin-left: 23px;
+    margin-left: 32px;
 
     @include tablet-width {
       margin-left: 27px;
@@ -212,8 +216,9 @@
     }
 
     p {
-      font-family: $roboto-condensed-lite;
-      font-size: 14px;
+      font-family: $roboto-condensed;
+      font-weight: 300;
+      font-size: 16px;
       color: #102654;
       line-height: 140%;
 
@@ -226,8 +231,9 @@
   }
 
   &__training {
-    font-family: $roboto-condensed-bold;
-    font-size: 23px;
+    font-family: $roboto-condensed;
+    font-weight: 700;
+    font-size: 26px;
     padding-bottom: 40px;
 
     @include tablet-width {
@@ -242,11 +248,12 @@
   }
 
   &__desk {
-    font-family: $roboto-condensed-bold;
-    font-size: 21px;
+    font-family: $roboto-condensed;
+    font-weight: 700;
+    font-size: 23px;
     line-height: 159%;
     color: #102654;
-    margin: -5px 0 10px;
+    margin: -9px 0 3px;
     letter-spacing: -0.4px;
 
     @include tablet-width {
@@ -260,8 +267,9 @@
   }
 
   &__text {
-    font-family: $roboto-condensed-regular;
-    font-size: 14px;
+    font-family: $roboto-condensed;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 150%;
 
     &--block {

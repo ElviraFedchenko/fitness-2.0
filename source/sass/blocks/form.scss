@@ -26,11 +26,12 @@
   }
 
   input {
-    font-family: $roboto-condensed-regular;
+    font-family: $roboto-condensed;
     border: none;
     padding: 7px 0;
     background-color: inherit;
     font-size: 12px;
+    font-weight: 400;
     color: $color-default-white;
     border-bottom: 1px solid #74819c;
     width: 190px;
@@ -63,7 +64,7 @@
   }
 
   &__button {
-    font-family: $roboto-condensed-bold;
+    font-family: $roboto-condensed;
     color: $color-default-white;
     background-color: inherit;
     padding: 16px 10px;

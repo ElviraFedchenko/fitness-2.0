@@ -37,7 +37,8 @@
   }
 
   &__description h2 {
-    font-family: $alumni-sans-semi-bold;
+    font-family: $alumni-sans;
+    font-weight: 600;
     font-size: 46px;
     line-height: normal;
     letter-spacing: 2.44px;
@@ -59,8 +60,9 @@
   }
 
   &__description h3 {
-    font-family: $roboto-condensed-regular;
-    font-size: 16px;
+    font-family: $roboto-condensed;
+    font-size: 18px;
+    font-weight: 400;
     color: $color-sapphire;
     margin: 0;
     padding-bottom: 40px;
@@ -76,10 +78,10 @@
   }
 
   &__description p {
-    font-family: $roboto-condensed-lite;
-    font-size: 14px;
+    font-family: $roboto-condensed;
+    font-size: 16px;
     font-weight: 300;
-    margin: 0;
+    margin: 0 0 8px;
     text-align: left;
 
     @include tablet-width {
@@ -94,8 +96,10 @@
   }
 
 
-  &__text {
-    padding-top: 7px;
+  &__description span {
+    font-family: $roboto-condensed;
+    font-size: 16px;
+    font-weight: 300;
 
     @include tablet-width {
       display: none;
