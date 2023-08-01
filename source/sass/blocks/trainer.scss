@@ -15,9 +15,10 @@
   }
 
   &__title {
-    font-family: $alumni-sans-semi-bold;
+    font-family: $alumni-sans;
     color: #102654;
     font-size: 54px;
+    font-weight: 600;
     letter-spacing: 1.62px;
     margin: 0;
     padding-bottom: 68px;
@@ -64,10 +65,11 @@
 
   &__profile {
     position: absolute;
-    bottom: 23px;
+    bottom: 21px;
     left: 50%;
-    font-family: $roboto-condensed-bold;
-    font-size: 16px;
+    font-family: $roboto-condensed;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 150%;
     color: $color-default-white;
     transform: translateX(-50%);
@@ -97,7 +99,8 @@
   }
 
   &__name {
-    font-family: $roboto-condensed-bold;
+    font-family: $roboto-condensed;
+    font-weight: 700;
     font-size: 18px;
     line-height: 150%;
   }
@@ -110,7 +113,8 @@
   }
 
   &__list {
-    font-family: $roboto-condensed-regular;
+    font-family: $roboto-condensed;
+    font-weight: 400;
     margin: 0;
     padding: 0 0 0 51px;
     text-align: left;

@@ -44,7 +44,6 @@ window.addEventListener('DOMContentLoaded', function () {
       button.remove();
       video.appendChild(iframe);
     });
-    link.removeAttribute('href');
     video.classList.add('content__video--enabled');
   }
 

@@ -10,7 +10,8 @@
   }
 
   &__title {
-    font-family: $alumni-sans-semi-bold;
+    font-family: $alumni-sans;
+    font-weight: 600;
     color: #102654;
     font-size: 54px;
     letter-spacing: 1.62px;
@@ -58,7 +59,8 @@
   }
 
   &__name {
-    font-family: $roboto-condensed-bold;
+    font-family: $roboto-condensed;
+    font-weight: 700;
     font-size: 18px;
     margin-top: -4px;
 
@@ -69,7 +71,8 @@
   }
 
   &__description {
-    font-family: $roboto-condensed-regular;
+    font-family: $roboto-condensed;
+    font-weight: 400;
     font-size: 14px;
     line-height: 163%;
     grid-column: 2/3;
