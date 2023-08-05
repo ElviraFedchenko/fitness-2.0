@@ -49,23 +49,15 @@
 
   &__title {
     color: #102654;
-    font-family: $alumni-sans;
-    font-weight: 600;
-    font-size: 54px;
-    letter-spacing: 1.62px;
     margin: 0 0 59px;
 
     @include tablet-width {
       margin: 0 0 54px;
       text-align: center;
-      letter-spacing: 1.26px;
-      font-size: 42px;
     }
 
     @include mobile-width {
       margin: 0 0 36px;
-      font-size: 32px;
-      letter-spacing: 0.96px;
     }
   }
 

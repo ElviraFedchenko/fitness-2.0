@@ -11,21 +11,15 @@
   }
 
   &__title {
-    font-family: $alumni-sans;
-    font-weight: 600;
-    letter-spacing: 1.62px;
-    font-size: 54px;
     color: #102654;
     text-align: center;
     margin: 0 0 54px;
 
     @include tablet-width {
-      font-size: 42px;
       margin: 0 0 53px;
     }
 
     @include mobile-width {
-      font-size: 30px;
       margin: 0 0 51px;
     }
   }
