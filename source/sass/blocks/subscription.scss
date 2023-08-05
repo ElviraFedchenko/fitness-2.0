@@ -16,24 +16,15 @@
     margin: 0;
     text-align: center;
     padding-bottom: 18px;
-    font-family: $alumni-sans;
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.62px;
+
     color: #102654;
 
     @include tablet-width {
       padding-bottom: 20px;
-      font-size: 42px;
-      letter-spacing: 1.26px;
     }
 
     @include mobile-width {
       padding-bottom: 23px;
-      font-size: 32px;
-      letter-spacing: 0.96px;
     }
   }
 
@@ -107,11 +98,11 @@
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,minmax(310px,360px));
     gap: 40px;
 
     @include tablet-width {
-      grid-template-columns: 1fr;
+      grid-template-columns: 100%;
       gap: 40px;
       justify-items: center;
     }
@@ -128,7 +119,7 @@
     font-weight: 400;
     border: 6px solid $color-default-white;
     color: #102654;
-    width: 360px;
+    min-width: 360px;
     min-height: 448px;
     padding: 56px 5px 20px;
     text-align: center;
@@ -136,12 +127,12 @@
 
     @include tablet-width {
       padding: 57px 5px 20px;
-      width: 442px;
+      min-width: 442px;
     }
 
     @include mobile-width {
       padding: 45px 5px 49px;
-      width: 290px;
+      min-width: 290px;
       min-height: 64px;
     }
 

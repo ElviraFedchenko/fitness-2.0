@@ -35,7 +35,20 @@
 
   &__container {
     display: flex;
-    position: relative;
+    grid-template-columns: 35% 65%;
+    gap: 64px;
+
+    @include tablet-width {
+      justify-content: center;
+      grid-template-columns: 50% 50%;
+      padding-bottom: 35px;
+      gap: 38px;
+    }
+
+    @include mobile-width {
+      display: block;
+      padding-bottom: 31px;
+    }
   }
 
   &__phone {
@@ -71,23 +84,18 @@
   }
 
   &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 106px;
-    padding-right: 64px;
-    padding-left: 96px;
+    display: grid;
+    grid-template-columns: 133px 246px;
+    grid-template-rows: min-content min-content auto;
+    gap: 8px 16px;
 
     @include tablet-width {
-      padding-top: 51px;
-      padding-right: 30px;
-      padding-left: 45px;
+      grid-template-columns: 113px 187px;
     }
 
     @include mobile-width {
-      padding-top: 70px;
-      padding-left: 0;
-      padding-right: 0;
+      grid-template-columns: 113px 1fr;
+      gap: 5px 0px;
     }
   }
 
@@ -99,21 +107,22 @@
     line-height: 69px;
     text-align: right;
     text-transform: uppercase;
-    margin: 0 49px 9px 0;
+    margin: 106px 49px 0px 0;
+    grid-column: span 2;
+    align-self: end;
 
     @include tablet-width {
       font-size: 29px;
       line-height: normal;
       letter-spacing: 1.02px;
-      margin: 3px 0 6px;
-      margin-right: 5px;
+      margin: 54px -2px 1px 0;
     }
 
     @include mobile-width {
-      font-size: 28px;
+      font-size: 24px;
       line-height: normal;
       letter-spacing: 0.84px;
-      margin: 0 0 13px;
+      margin: 72px 6px 9px;
     }
   }
 
@@ -126,7 +135,7 @@
     letter-spacing: 0.05em;
     line-height: 110px;
     max-width: 300px;
-    margin: 0 0 46px;
+    margin: 0px 0px 41px;
     text-transform: uppercase;
     /* stylelint-disable */
     -webkit-text-stroke: 2px $color-default-white;
@@ -136,7 +145,7 @@
       font-size: 72px;
       line-height: normal;
       letter-spacing: 3.6px;
-      margin-bottom: 35px;
+      margin-bottom: 45px;
       text-transform: none;
     }
 
@@ -144,22 +153,26 @@
       font-size: 72px;
       line-height: normal;
       letter-spacing: 3.6px;
-      margin-bottom: 22px;
+      margin-left: -12px;
+      margin-bottom: 16px;
     }
   }
 
   &__description {
-    position: absolute;
-    bottom: 188px;
-    left: 20px;
+    text-align: right;
+    font-family: $roboto-condensed;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    grid-row-start: 2;
+    margin: 121px 0 0;
 
     @include tablet-width {
-      bottom: 141px;
-      left: 0;
+      margin: 89px -1px 0;
     }
 
     @include mobile-width {
-      bottom: 113px;
+      margin: 80px -1px 0;
     }
   }
 
@@ -172,9 +185,14 @@
     line-height: 150%;
   }
 
+  &__wrapper-toggle {
+    grid-column: span 2;
+    text-align: right;
+  }
+
   &__toggle {
     background: transparent;
-    padding: 15px 51px;
+    padding: 14px 49px;
     text-transform: uppercase;
     font-family: $roboto-condensed;
     font-size: 14px;
@@ -183,6 +201,7 @@
     color: $color-default-white;
     border: 4px solid $color-default-white;
     text-align: center;
+    display: inline-block;
 
     @include tablet-width {
       padding: 15px 10px;
@@ -192,7 +211,7 @@
 
     @include mobile-width {
       min-width: 100%;
-      padding: 14px 10px;
+      padding: 16px 10px;
     }
 
     &:hover,
