@@ -1,5 +1,5 @@
 .stock {
-  padding: 155px 0 140px;
+  padding: 155px 0 120px;
 
   @include tablet-width {
     padding: 105px 0 100px;
@@ -21,12 +21,12 @@
 
     @include tablet-width {
       font-size: 42px;
-      margin: 0 0 55px;
+      margin: 0 0 53px;
     }
 
     @include mobile-width {
       font-size: 30px;
-      margin: 0 0 52px;
+      margin: 0 0 51px;
     }
   }
 
@@ -56,13 +56,11 @@
       grid-row: span 1;
       grid-column: 1/-1;
       justify-self: center;
-      margin-bottom: 30px;
     }
 
     @include mobile-width {
       grid-template-columns: 1fr;
       width: 100%;
-      margin-bottom: 31px;
     }
   }
 
@@ -85,6 +83,10 @@
       font-size: 28px;
       line-height: 156%;
       margin: 0 0 19px;
+
+      @include tablet-width {
+        margin: 0 0 17px;
+      }
     }
   }
 
@@ -107,7 +109,7 @@
     line-height: 145%;
 
     @include mobile-width {
-      padding-bottom: 30px;
+      padding-bottom: 25px;
     }
   }
 
