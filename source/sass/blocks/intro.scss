@@ -87,6 +87,7 @@
     @include tablet-width {
       padding-right: 3px;
       text-align: center;
+      margin: 0;
     }
 
     @include mobile-width {

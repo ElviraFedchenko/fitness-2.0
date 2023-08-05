@@ -21,7 +21,7 @@
 
     @include mobile-width {
       width: 100%;
-      margin-bottom: 14px;
+      margin-bottom: 11px;
     }
   }
 
@@ -30,12 +30,12 @@
     border: none;
     padding: 7px 0;
     background-color: inherit;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: $color-default-white;
     border-bottom: 1px solid #74819c;
     width: 190px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 
     @include tablet-width {
       width: 206px;
@@ -43,6 +43,8 @@
 
     @include mobile-width {
       width: 100%;
+      padding: 8px 0;
+      font-size: 15px;
     }
 
     &:hover {
@@ -69,7 +71,7 @@
     background-color: inherit;
     padding: 16px 10px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.7px;
     text-transform: uppercase;

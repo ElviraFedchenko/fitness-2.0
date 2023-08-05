@@ -1,7 +1,7 @@
 .connection {
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
 
     @include tablet-width {
       grid-template-columns: 1fr;
@@ -11,7 +11,7 @@
   &__form {
     color: $color-default-white;
     background-color: #102654;
-    padding: 56px 170px 70px 103px;
+    padding: 56px 107px 70px 103px;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -24,13 +24,13 @@
     }
 
     @include mobile-width {
-      padding: 60px 15px 67px;
+      padding: 60px 15px 68px;
     }
   }
 
   &__form-title {
     font-family: $alumni-sans;
-    font-size: 54px;
+    font-size: 55px;
     font-weight: 700;
     line-height: 156%;
     letter-spacing: 1.62px;
@@ -46,7 +46,7 @@
     @include mobile-width {
       font-size: 32px;
       letter-spacing: 0.96px;
-      margin: 0 0 30px;
+      margin: 0 0 23px;
     }
   }
 
@@ -57,7 +57,7 @@
     letter-spacing: 1.62px;
     color: #102654;
     line-height: 156%;
-    margin: 0 0 29px;
+    margin: 0 0 27px;
 
     @include tablet-width {
       font-size: 42px;
@@ -68,7 +68,7 @@
     @include mobile-width {
       font-size: 32px;
       letter-spacing: 0.96px;
-      margin: 0 0 33px;
+      margin: 0 0 29px;
     }
   }
 
@@ -96,7 +96,7 @@
 
     @include mobile-width {
       border: 0;
-      margin-bottom: 24px;
+      margin-bottom: 18px;
     }
   }
 
@@ -113,10 +113,10 @@
   }
 
   &__address-item {
-    margin-bottom: 21px;
+    margin-bottom: 17px;
 
     @include mobile-width {
-      margin-bottom: 24px;
+      margin-bottom: 18px;
     }
   }
 
@@ -126,7 +126,7 @@
     border-top: 1px solid #74819c;
 
     @include tablet-width {
-      padding: 54px 131px 60px;
+      padding: 54px 131px 58px;
     }
 
     @include mobile-width {
@@ -140,12 +140,12 @@
 
     line-height: 150%;
     margin: 0 0 4px;
-    font-size: 14px;
+    font-size: 16px;
 
     @include tablet-width {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 153%;
-      margin: 0 0 9px;
+      margin: 0 0 5px;
     }
 
     @include mobile-width {
@@ -158,12 +158,12 @@
     margin: 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 21px;
     color: #102654;
 
     @include tablet-width {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 153%;
     }
   }
@@ -172,7 +172,7 @@
     margin-bottom: 17px;
 
     @include tablet-width {
-      margin-bottom: 25px;
+      margin-bottom: 18px;
     }
   }
 
@@ -180,10 +180,10 @@
     font-family: $roboto-condensed;
     font-weight: 400;
     line-height: 153%;
-    font-size: 12px;
+    font-size: 14px;
 
     @include tablet-width {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 
@@ -191,20 +191,20 @@
     font-family: $roboto-condensed;
     font-weight: 400;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     color: #102654;
-    margin-top: -2px;
+    margin-top: -9px;
     padding: 5px 0;
     line-height: 153%;
 
     @include tablet-width {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 153%;
-      margin-top: -11px;
+      margin-top: -6px;
     }
 
     @include mobile-width {
-      margin: 0 0 -3px;
+      margin: -6px 0 2px;
     }
   }
 }

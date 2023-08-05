@@ -1,13 +1,13 @@
 .feedback {
-  padding: 120px 0 89px;
+  padding: 140px 0 95px;
   background-color: $additional-background;
 
   @include tablet-width {
-    padding: 114px 0 43px;
+    padding: 114px 0 27px;
   }
 
   @include mobile-width {
-    padding: 76px 0 22px;
+    padding: 76px 0 24px;
   }
 
   &__tabs {
@@ -34,12 +34,16 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(2, min-content);
-      gap: 8px;
+      gap: 5px 8px;
     }
   }
 
   &__item {
-    overflow-y: hidden;
+    overflow: hidden;
+
+    @include mobile-width {
+      overflow: visible;
+    }
   }
 
 
@@ -59,7 +63,7 @@
     }
 
     @include mobile-width {
-      margin: 0 0 38px;
+      margin: 0 0 36px;
       font-size: 32px;
       letter-spacing: 0.96px;
     }
@@ -75,7 +79,7 @@
     border: 1px solid $color-border;
     background-color: $color-default-white;
     padding: 18px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     width: 260px;
     cursor: pointer;
 
@@ -85,7 +89,7 @@
 
     @include mobile-width {
       width: 141px;
-      font-size: 14px;
+      font-size: 16px;
       margin: 0;
       padding: 14px 10px;
     }
@@ -144,10 +148,10 @@
       }
 
       @include mobile-width {
-        font-size: 14px;
+        font-size: 16px;
         padding-bottom: 0;
         width: 290px;
-        line-height: 165%;
+        line-height: 142%;
       }
     }
   }
@@ -203,7 +207,7 @@
     text-align: left;
     background-color: transparent;
     font-family: $roboto-condensed;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
     color: #102654;
     letter-spacing: -0.3px;
@@ -213,22 +217,29 @@
 
 
     @include tablet-width {
-      padding: 32px 0;
+      padding: 30px 0;
       letter-spacing: -0.3px;
       width: 560px;
+      line-height: 120%;
     }
 
     @include mobile-width {
       max-width: 238px;
-      font-size: 16px;
-      line-height: 132%;
-      padding: 23px 0 17px;
+      font-size: 18px;
+      line-height: 122%;
+      padding: 21px 0 17px;
     }
 
     &--last {
       @include tablet-width {
-        padding: 27px 0;
+        padding: 23px 0;
       }
+    }
+  }
+
+  &__button--position .feedback__button-svg {
+    @include mobile-width {
+      top: 26px;
     }
   }
 
@@ -255,10 +266,14 @@
     border-radius: 50%;
     color: #102654;
 
+    @include tablet-width {
+      top: 29px;
+    }
+
     @include mobile-width {
       width: 32px;
       height: 32px;
-      top: 35px;
+      top: 36px;
     }
 
     & svg {
@@ -289,12 +304,17 @@
   }
 
   &__element.is-active &__content {
-    margin-top: 10px;
-    margin-bottom: 11px;
+    margin-top: 12px;
+    margin-bottom: 13px;
 
     @include tablet-width {
-      margin-top: 7px;
-      margin-bottom: 14px;
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+
+    @include mobile-width {
+      margin-top: 4px;
+      margin-bottom: 17px;
     }
   }
 

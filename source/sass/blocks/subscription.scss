@@ -9,7 +9,7 @@
   }
 
   @include mobile-width {
-    padding: 63px 0 70px 0;
+    padding: 63px 0 71px 0;
   }
 
   &__title {
@@ -25,7 +25,7 @@
     color: #102654;
 
     @include tablet-width {
-      padding-bottom: 22px;
+      padding-bottom: 20px;
       font-size: 42px;
       letter-spacing: 1.26px;
     }
@@ -51,7 +51,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-bottom: 33px;
+      margin-bottom: 31px;
     }
   }
 
@@ -73,12 +73,12 @@
     }
 
     @include tablet-width {
-      font-size: 16px;
+      font-size: 18px;
       margin-right: 51px;
     }
 
     @include mobile-width {
-      font-size: 14px;
+      font-size: 16px;
       margin-right: 0;
       padding: 0 0 15px;
     }
@@ -135,12 +135,12 @@
     z-index: 100;
 
     @include tablet-width {
-      padding: 60px 5px 20px;
+      padding: 57px 5px 20px;
       width: 442px;
     }
 
     @include mobile-width {
-      padding: 48px 5px 48px;
+      padding: 45px 5px 49px;
       width: 290px;
       min-height: 64px;
     }
@@ -152,7 +152,6 @@
     }
   }
 
-
   &__desk {
     margin: 0;
     font-family: $roboto-condensed;
@@ -163,7 +162,7 @@
     padding-bottom: 11px;
 
     @include mobile-width {
-      font-size: 19px;
+      font-size: 22px;
       padding-bottom: 10px;
     }
   }
@@ -173,12 +172,8 @@
     font-size: 16px;
 
     @include mobile-width {
-      margin: 0 0 57px;
+      margin: 0 0 53px;
     }
-  }
-
-  @include mobile-width {
-    padding-bottom: 70px;
   }
 
   &__price {
@@ -195,8 +190,8 @@
 
     @include mobile-width {
       display: inline-block;
-      font-size: 44px;
-      padding-bottom: 34px;
+      font-size: 48px;
+      padding-bottom: 30px;
     }
   }
 
@@ -213,9 +208,9 @@
     @include mobile-width {
       width: 167px;
       height: 44px;
-      font-size: 70px;
-      top: -20px;
-      left: -13%;
+      font-size: 80px;
+      top: -24px;
+      left: -12%;
     }
   }
 
