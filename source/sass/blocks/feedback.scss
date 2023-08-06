@@ -3,7 +3,7 @@
   background-color: $additional-background;
 
   @include tablet-width {
-    padding: 114px 0 27px;
+    padding: 114px 0 31px;
   }
 
   @include mobile-width {
@@ -11,41 +11,40 @@
   }
 
   &__tabs {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 12px;
+    display: flex;
 
     @include tablet-width {
-      grid-template-columns: 1fr;
-      gap: 29px;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
+  }
+
+  &__block {
+    width: 100%;
   }
 
   &__controls {
     display: flex;
     flex-direction: column;
+    padding-right: 40px;
 
     @include tablet-width {
       flex-direction: row;
-      gap: 10px;
+      justify-content: center;
     }
 
     @include mobile-width {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(2, min-content);
-      gap: 5px 8px;
+      gap: 10px 8px;
+      justify-items: center;
+      margin-bottom: 29px;
     }
   }
 
-  &__item {
-    overflow: hidden;
-
-    @include mobile-width {
-      overflow: visible;
-    }
+  &__container {
+    width: 100%;
   }
-
 
   &__title {
     color: #102654;
@@ -75,13 +74,15 @@
 
     @include tablet-width {
       width: 162px;
+      margin-bottom: 40px;
+      margin-right: 10px;
     }
 
     @include mobile-width {
       width: 141px;
       font-size: 16px;
       margin: 0;
-      padding: 14px 10px;
+      padding: 13px 10px;
     }
 
     &:active {
@@ -101,7 +102,6 @@
     }
   }
 
-
   &__control.is-active {
     background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
     color: $color-default-white;
@@ -111,7 +111,7 @@
   &__wrapper {
     margin-left: 40px;
     font-size: 18px;
-
+    overflow: hidden;
 
     @include tablet-width {
       font-size: 18px;
@@ -119,6 +119,7 @@
 
     @include mobile-width {
       font-size: 16px;
+      overflow: visible;
     }
 
     p {
@@ -128,19 +129,17 @@
       font-size: 18px;
       color: #102654;
       padding-bottom: 16px;
-      width: 660px;
-      letter-spacing: -0.3px;
       padding-top: 8px;
+      max-width: 680px;
 
       @include tablet-width {
-        width: 538px;
         padding-top: 6px;
+        max-width: 540px;
       }
 
       @include mobile-width {
         font-size: 16px;
         padding-bottom: 0;
-        width: 290px;
         line-height: 142%;
       }
     }
@@ -149,7 +148,6 @@
   &__element {
     border-top: 1px solid $color-resolution-blue;
     position: relative;
-    width: 860px;
 
 
     &:hover .feedback__button-svg,
@@ -160,14 +158,6 @@
 
     &:disabled + .feedback__button-svg {
       opacity: 0.2;
-    }
-
-    @include tablet-width {
-      width: 678px;
-    }
-
-    @include mobile-width {
-      width: 290px;
     }
 
     h3 {
@@ -197,10 +187,10 @@
     text-align: left;
     background-color: transparent;
     font-family: $roboto-condensed;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     color: #102654;
-    letter-spacing: -0.3px;
+    letter-spacing: 0.1px;
     cursor: pointer;
     width: 100%;
     padding: 32px 0;
@@ -208,13 +198,12 @@
 
     @include tablet-width {
       padding: 30px 0;
-      letter-spacing: -0.3px;
-      width: 560px;
+      max-width: 560px;
       line-height: 120%;
     }
 
     @include mobile-width {
-      max-width: 238px;
+      max-width: 260px;
       font-size: 18px;
       line-height: 122%;
       padding: 21px 0 17px;
@@ -224,6 +213,13 @@
       @include tablet-width {
         padding: 23px 0;
       }
+    }
+  }
+
+
+  &__button--last .feedback__button-svg {
+    @include tablet-width {
+      top: 32px;
     }
   }
 
@@ -257,7 +253,7 @@
     color: #102654;
 
     @include tablet-width {
-      top: 29px;
+      top: 22px;
     }
 
     @include mobile-width {
