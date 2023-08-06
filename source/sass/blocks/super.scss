@@ -191,16 +191,12 @@
   }
 
   &__button {
-    font-family: $roboto-condensed;
-    font-weight: 700;
     color: $color-default-white;
     padding: 20px 5px;
     outline: 3px solid $color-default-white;
     display: block;
     text-transform: uppercase;
     text-align: center;
-    font-size: 12px;
-    letter-spacing: 0.6px;
     margin-bottom: 30px;
 
     @include tablet-width {

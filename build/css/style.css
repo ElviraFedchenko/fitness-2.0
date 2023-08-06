@@ -1312,7 +1312,6 @@ h2 {
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 1.62px;
 }
 @media (max-width: 1199px) {
@@ -1324,7 +1323,6 @@ h2 {
 @media (max-width: 767px) {
   h2 {
     font-size: 32px;
-    letter-spacing: 0.96px;
   }
 }
 
@@ -1468,6 +1466,15 @@ button,
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+}
+
+.button {
+  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .scroll-lock-ios {
@@ -1791,7 +1798,7 @@ button,
   .main-nav__inner {
     -ms-grid-columns: 113px 1fr;
     grid-template-columns: 113px 1fr;
-    gap: 5px 0px;
+    gap: 5px 0;
   }
 }
 .main-nav__city {
@@ -1802,7 +1809,7 @@ button,
   line-height: 69px;
   text-align: right;
   text-transform: uppercase;
-  margin: 106px 49px 0px 0;
+  margin: 106px 49px 0 0;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   -ms-grid-row-align: end;
@@ -1821,7 +1828,7 @@ button,
     font-size: 24px;
     line-height: normal;
     letter-spacing: 0.84px;
-    margin: 72px 6px 9px;
+    margin: 72px 12px 9px 0;
   }
 }
 .main-nav__title {
@@ -1832,7 +1839,7 @@ button,
   letter-spacing: 0.05em;
   line-height: 110px;
   max-width: 300px;
-  margin: 0px 0px 41px;
+  margin: 0 0 41px;
   text-transform: uppercase;
   /* stylelint-disable */
   -webkit-text-stroke: 2px #ffffff;
@@ -1843,7 +1850,7 @@ button,
     font-size: 72px;
     line-height: normal;
     letter-spacing: 3.6px;
-    margin-bottom: 45px;
+    margin: 0 -8px 25px 0;
     text-transform: none;
   }
 }
@@ -1852,8 +1859,9 @@ button,
     font-size: 72px;
     line-height: normal;
     letter-spacing: 3.6px;
-    margin-left: -12px;
+    margin-right: 10px;
     margin-bottom: 16px;
+    margin-left: -12px;
   }
 }
 .main-nav__description {
@@ -1891,10 +1899,10 @@ button,
 }
 .main-nav__toggle {
   background: transparent;
-  padding: 14px 49px;
+  padding: 14px 53px;
   text-transform: uppercase;
   font-family: "Roboto-Condensed", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   color: #ffffff;
@@ -1906,13 +1914,15 @@ button,
   .main-nav__toggle {
     padding: 15px 10px;
     min-width: 184px;
-    font-size: 13px;
+    font-size: 12px;
+    margin-right: -10px;
   }
 }
 @media (max-width: 767px) {
   .main-nav__toggle {
     min-width: 100%;
     padding: 16px 10px;
+    margin: 0px 4px 0 -5px;
   }
 }
 .main-nav__toggle:hover, .main-nav__toggle:focus {
@@ -1981,19 +1991,25 @@ button,
   }
 }
 .intro__description h2 {
+  font-size: 46px;
   letter-spacing: 2.44px;
-  padding-top: 42px;
-  padding-bottom: 8px;
+  padding-top: 55px;
+  padding-bottom: 27px;
   margin: 0;
 }
 @media (max-width: 1199px) {
   .intro__description h2 {
-    padding: 0;
+    font-size: 40px;
+    padding-top: 13px;
+    padding-bottom: 14px;
   }
 }
 @media (max-width: 767px) {
   .intro__description h2 {
-    padding-bottom: 5px;
+    letter-spacing: 1.44px;
+    font-size: 31px;
+    padding-bottom: 13px;
+    padding-top: 7px;
   }
 }
 .intro__description h3 {
@@ -2210,7 +2226,7 @@ button,
 @media (max-width: 767px) {
   .footer__item:not(:last-child) {
     margin-right: 64px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -2230,7 +2246,8 @@ button,
 }
 .footer__item img {
   margin-right: 0;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
+  margin-top: 2px;
 }
 .footer__list {
   display: -webkit-box;
@@ -2250,7 +2267,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     display: block;
     -webkit-column-count: 2;
        -moz-column-count: 2;
@@ -2380,17 +2397,20 @@ button,
 .subscription__title {
   margin: 0;
   text-align: center;
-  padding-bottom: 18px;
+  padding-bottom: 37px;
   color: #102654;
+  padding-top: 22px;
 }
 @media (max-width: 1199px) {
   .subscription__title {
-    padding-bottom: 20px;
+    padding-bottom: 33px;
+    padding-top: 15px;
   }
 }
 @media (max-width: 767px) {
   .subscription__title {
-    padding-bottom: 23px;
+    padding-top: 10px;
+    padding-bottom: 27px;
   }
 }
 .subscription__controls {
@@ -2493,22 +2513,20 @@ button,
   font-weight: 400;
   border: 6px solid #ffffff;
   color: #102654;
-  min-width: 360px;
   min-height: 448px;
-  padding: 56px 5px 20px;
+  padding: 56px 20px 20px;
   text-align: center;
   z-index: 100;
 }
 @media (max-width: 1199px) {
   .subscription__item {
-    padding: 57px 5px 20px;
+    padding: 57px 20px 20px;
     min-width: 442px;
   }
 }
 @media (max-width: 767px) {
   .subscription__item {
-    padding: 45px 5px 49px;
-    min-width: 290px;
+    padding: 45px 20px 49px;
     min-height: 64px;
   }
 }
@@ -2584,12 +2602,8 @@ button,
 .subscription__button {
   border: 2px solid #102654;
   padding: 19px 44px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  display: inline-block;
   vertical-align: middle;
 }
 @media (max-width: 1199px) {
@@ -2850,16 +2864,12 @@ button,
   background-color: #ffffff;
 }
 .super__button {
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
-  font-weight: 700;
   color: #ffffff;
   padding: 20px 5px;
   outline: 3px solid #ffffff;
   display: block;
   text-transform: uppercase;
   text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.6px;
   margin-bottom: 30px;
 }
 @media (max-width: 1199px) {
@@ -3672,7 +3682,6 @@ button,
   }
 }
 .feedback__control {
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #102654;
@@ -3683,7 +3692,6 @@ button,
   padding: 18px 10px;
   margin-bottom: 8px;
   width: 260px;
-  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .feedback__control {
@@ -3959,20 +3967,23 @@ button,
     padding: 60px 15px 68px;
   }
 }
-.connection__form-title {
+.connection__form h2 {
   font-size: 55px;
   font-weight: 700;
   line-height: 156%;
   margin: 0 0 16px;
 }
 @media (max-width: 1199px) {
-  .connection__form-title {
+  .connection__form h2 {
+    font-size: 42px;
     font-weight: 700;
     margin: 0 0 22px;
   }
 }
 @media (max-width: 767px) {
-  .connection__form-title {
+  .connection__form h2 {
+    font-size: 32px;
+    font-weight: 600;
     margin: 0 0 23px;
   }
 }
@@ -4210,18 +4221,15 @@ button,
   opacity: 0.5;
 }
 .form__button {
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
   color: #ffffff;
   background-color: inherit;
   padding: 16px 10px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
   border: 3px solid #ffffff;
   width: 100%;
-  cursor: pointer;
 }
 .form__button:hover, .form__button:focus {
   background-color: #ffffff;
@@ -4269,7 +4277,7 @@ button,
   .swiper-arrow {
     width: 32px;
     height: 32px;
-    bottom: 120px;
+    bottom: 140px;
   }
 }
 .swiper-arrow:hover {
@@ -4305,11 +4313,11 @@ button,
 }
 
 .reviews {
-  padding: 146px 0 121px;
+  padding: 145px 0 121px;
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding: 105px 0 99px;
+    padding: 105px 0 98px;
   }
 }
 @media (max-width: 767px) {

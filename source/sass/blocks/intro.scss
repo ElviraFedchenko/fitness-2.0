@@ -37,17 +37,23 @@
   }
 
   &__description h2 {
+    font-size: 46px;
     letter-spacing: 2.44px;
-    padding-top: 42px;
-    padding-bottom: 8px;
+    padding-top: 55px;
+    padding-bottom: 27px;
     margin: 0;
 
     @include tablet-width {
-      padding: 0;
+      font-size: 40px;
+      padding-top: 13px;
+      padding-bottom: 14px;
     }
 
     @include mobile-width {
-      padding-bottom: 5px;
+      letter-spacing: 1.44px;
+      font-size: 31px;
+      padding-bottom: 13px;
+      padding-top: 7px;
     }
   }
 

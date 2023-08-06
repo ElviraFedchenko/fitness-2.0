@@ -33,7 +33,7 @@
 
     @include mobile-width {
       margin-right: 64px;
-      margin-bottom: 13px;
+      margin-bottom: 15px;
     }
   }
 
@@ -53,7 +53,8 @@
 
   &__item img {
     margin-right: 0;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
+    margin-top: 2px;
   }
 
   &__list {
@@ -64,7 +65,7 @@
 
     @include mobile-width {
       flex-direction: column;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       display: block;
       column-count: 2;
       column-gap: 30px;

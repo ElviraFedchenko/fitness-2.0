@@ -66,18 +66,15 @@
   }
 
   &__button {
-    font-family: $roboto-condensed;
     color: $color-default-white;
     background-color: inherit;
     padding: 16px 10px;
-    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.7px;
     text-transform: uppercase;
     border: 3px solid $color-default-white;
     width: 100%;
-    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -97,3 +94,4 @@
     }
   }
 }
+
