@@ -44,6 +44,7 @@
       font-size: 32px;
       font-weight: 600;
       margin: 0 0 23px;
+      letter-spacing: 1px;
     }
   }
 
@@ -58,6 +59,7 @@
 
     @include mobile-width {
       margin: 0 0 29px;
+      letter-spacing: 1px;
     }
   }
 
