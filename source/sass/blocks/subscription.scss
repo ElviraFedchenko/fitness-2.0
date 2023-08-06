@@ -15,16 +15,18 @@
   &__title {
     margin: 0;
     text-align: center;
-    padding-bottom: 18px;
-
+    padding-bottom: 37px;
     color: #102654;
+    padding-top: 22px;
 
     @include tablet-width {
-      padding-bottom: 20px;
+      padding-bottom: 33px;
+      padding-top: 15px;
     }
 
     @include mobile-width {
-      padding-bottom: 23px;
+      padding-top: 10px;
+      padding-bottom: 27px;
     }
   }
 
@@ -98,7 +100,7 @@
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3,minmax(310px,360px));
+    grid-template-columns: repeat(3, minmax(310px, 360px));
     gap: 40px;
 
     @include tablet-width {
@@ -119,20 +121,18 @@
     font-weight: 400;
     border: 6px solid $color-default-white;
     color: #102654;
-    min-width: 360px;
     min-height: 448px;
-    padding: 56px 5px 20px;
+    padding: 56px 20px 20px;
     text-align: center;
     z-index: 100;
 
     @include tablet-width {
-      padding: 57px 5px 20px;
+      padding: 57px 20px 20px;
       min-width: 442px;
     }
 
     @include mobile-width {
-      padding: 45px 5px 49px;
-      min-width: 290px;
+      padding: 45px 20px 49px;
       min-height: 64px;
     }
 
@@ -208,12 +208,8 @@
   &__button {
     border: 2px solid #102654;
     padding: 19px 44px;
-    font-family: $roboto-condensed;
-    font-size: 12px;
-    font-weight: 700;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    display: inline-block;
     vertical-align: middle;
 
     @include tablet-width {
