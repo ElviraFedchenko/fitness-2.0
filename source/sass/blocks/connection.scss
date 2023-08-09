@@ -1,10 +1,28 @@
 .connection {
+  position: relative;
+  background-image: linear-gradient(to right, $color-sapphire 50%, $color-default-white 50% 100%);
+
+  @include tablet-width {
+    background-image: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: $color-sapphire;
+    top: 0;
+    left: 50%;
+  }
+
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+    display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
 
     @include tablet-width {
-      grid-template-columns: 1fr;
+      display: block;
     }
   }
 
@@ -15,6 +33,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    width: 50%;
 
     @include tablet-width {
       width: 100%;
@@ -33,6 +52,7 @@
     font-weight: 700;
     line-height: 156%;
     margin: 0 0 16px;
+    color: inherit;
 
     @include tablet-width {
       font-size: 42px;
@@ -50,8 +70,8 @@
 
   &__contact-title {
     color: #102654;
-    line-height: 156%;
-    margin: 0 0 27px;
+    line-height: 154%;
+    margin: 3px -3px 26px;
 
     @include tablet-width {
       margin: 0 0 25px;
@@ -63,12 +83,29 @@
     }
   }
 
-  &__contact-wrapper {
+  &__contact-list {
+    position: relative;
     display: grid;
-    grid-template-columns: 235px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px 120px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      bottom: 6px;
+      left: 53%;
+      width: 1px;
+      background-color: #74819c;
+      transform: translateX(-50%);
+
+      @include mobile-width {
+        display: none;
+      }
+    }
 
     @include tablet-width {
-      grid-template-columns: 268px 1fr;
+      gap: 17px 77px;
     }
 
     @include mobile-width {
@@ -76,52 +113,37 @@
     }
   }
 
-  &__address {
-    border-right: 1px solid #74819c;
-    padding-left: 5px;
+  &__item {
+    min-width: 170px;
+
+    &--position {
+      grid-area: 2/1/2/2;
+    }
 
     @include tablet-width {
-      padding-left: 0;
-      padding-right: 30px;
+      min-width: 240px;
     }
 
-    @include mobile-width {
-      border: 0;
-      margin-bottom: 18px;
-    }
-  }
-
-  &__info {
-    padding-left: 60px;
-
-    @include tablet-width {
-      padding-left: 47px;
-    }
-
-    @include mobile-width {
-      padding-left: 0;
-    }
-  }
-
-  &__address-item {
-    margin-bottom: 17px;
-
-    @include mobile-width {
-      margin-bottom: 18px;
+    &--else {
+      @include mobile-width {
+        margin-top: 2px;
+      }
     }
   }
 
   &__contact {
-    padding: 46px 120px 35px;
+    padding: 46px 124px 35px;
     color: #102654;
-    border-top: 1px solid #74819c;
+    width: 50%;
 
     @include tablet-width {
-      padding: 54px 131px 58px;
+      padding: 54px 131px 63px;
+      width: 100%;
     }
 
     @include mobile-width {
-      padding: 57px 15px 55px;
+      width: 100%;
+      padding: 57px 15px 59px;
     }
   }
 
@@ -159,13 +181,6 @@
     }
   }
 
-  &__info-item {
-    margin-bottom: 17px;
-
-    @include tablet-width {
-      margin-bottom: 18px;
-    }
-  }
 
   &__info-link {
     font-family: $roboto-condensed;
@@ -185,7 +200,7 @@
     font-size: 14px;
     color: #102654;
     margin-top: -9px;
-    padding: 5px 0;
+    padding: 8px 0 0;
     line-height: 153%;
 
     @include tablet-width {

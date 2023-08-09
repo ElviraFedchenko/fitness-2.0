@@ -22,6 +22,7 @@
       font-weight: 400;
       line-height: 150%;
       padding-bottom: 5px;
+      color: $color-default-white;
 
       @include tablet-width {
         font-size: 12px;
@@ -70,6 +71,7 @@
     letter-spacing: 2.46px;
     text-transform: uppercase;
     margin: 6px 0 28px 15px;
+    color: inherit;
 
     @include tablet-width {
       font-size: 48px;

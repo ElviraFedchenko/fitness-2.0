@@ -16,7 +16,6 @@
     margin: 0;
     text-align: center;
     padding-bottom: 37px;
-    color: #102654;
     padding-top: 22px;
 
     @include tablet-width {
@@ -184,7 +183,13 @@
       font-size: 48px;
       padding-bottom: 30px;
     }
+
+    & span:first-child {
+      color: $color-default-black;
+      font-weight: 500;
+    }
   }
+
 
   &__description {
     color: $color-default-black;

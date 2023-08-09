@@ -38,12 +38,6 @@
 
 // Desktop first
 
-@mixin desktop-width-only {
-  @media (min-width: 1200px) {
-    @content;
-  }
-}
-
 @mixin tablet-width {
   @media (max-width: 1199px) {
     @content;

@@ -38,13 +38,7 @@
   }
 
   &__item--mobile {
-    @include desktop-width-only {
-      display: none;
-    }
-
-    @include tablet-width {
-      display: none;
-    }
+    display: none;
 
     @include mobile-width {
       display: block;
