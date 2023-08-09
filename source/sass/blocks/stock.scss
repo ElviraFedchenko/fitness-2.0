@@ -11,7 +11,6 @@
   }
 
   &__title {
-    color: #102654;
     text-align: center;
     margin: 0 0 54px;
 
@@ -108,7 +107,7 @@
   }
 
   &__card {
-    padding: 26px 27px 22px;
+    padding: 25px 27px 30px;
     border: 7px solid;
     border-image: linear-gradient(#d10a42, #00359f);
     border-image-slice: 1;
@@ -132,6 +131,7 @@
       font-size: 16px;
       color: #1c3374;
       margin: 0 0 63px;
+      letter-spacing: 0.1px;
 
       @include tablet-width {
         margin: 0;
@@ -158,13 +158,13 @@
     font-weight: 700;
     color: #1c3374;
     font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     border-bottom: 1px solid #1c3374;
-    padding-bottom: 3px;
 
     @include tablet-width {
-      font-size: 10px;
+      font-size: 12px;
       padding-bottom: 0;
     }
 
@@ -173,10 +173,14 @@
       opacity: 0.8;
     }
 
-    &:focus {
-      color: #1c3374;
-      outline: 2px solid #1c3374;
-      padding: 5px;
+    &:active {
+      opacity: 1;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-default-black;
+      outline-offset: 5px;
+      border-bottom: none;
     }
 
     &:disabled {

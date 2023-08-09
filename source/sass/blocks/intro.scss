@@ -95,7 +95,7 @@
   }
 
 
-  &__description span {
+  &__description p:last-child {
     font-family: $roboto-condensed;
     font-size: 16px;
     font-weight: 300;

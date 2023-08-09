@@ -1,6 +1,7 @@
 .advantages {
   background-color: $additional-background;
   padding: 130px 0 125px;
+  position: relative;
 
   @include tablet-width {
     padding: 105px 0 85px;
@@ -11,7 +12,6 @@
   }
 
   &__title {
-    color: #102654;
     margin: 0;
     text-align: center;
     padding-bottom: 75px;
@@ -27,20 +27,19 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-self: center;
-    justify-items: center;
     margin: 0 50px;
-    gap: 65px 10px;
-    grid-auto-flow: dense;
+    gap: 75px 202px;
+    width: 100%;
 
     @include tablet-width {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 27px 30px;
+      gap: 318px 30px;
       margin: 0;
     }
 
     @include mobile-width {
+      position: static;
       display: block;
       margin: 0;
     }
@@ -49,18 +48,42 @@
   &__item {
     display: flex;
     min-height: 0;
+    max-width: 340px;
 
     @include tablet-width {
       padding-bottom: 10px;
     }
 
+    @include mobile-width {
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      min-width: 100%;
+    }
+
     &--line {
       border-bottom: 2px solid $color-crimson;
-      padding-bottom: 66px;
+      padding-bottom: 77px;
+      margin-left: 30px;
 
       @include tablet-width {
         border-bottom: none;
         padding: 0;
+        margin-left: 0;
+      }
+    }
+
+    &--square {
+      margin-left: 30px;
+
+      @include tablet-width {
+        margin-left: 0;
+      }
+
+      @include mobile-width {
+        padding-bottom: 30px;
       }
     }
 
@@ -82,39 +105,38 @@
     }
 
     &--experience {
+      margin-left: 30px;
+
+      @include tablet-width {
+        margin-left: 0;
+      }
+
       @include mobile-width {
         padding-top: 37px;
       }
     }
 
-    @include mobile-width {
-      display: block;
-      text-align: center;
-      margin-bottom: 0;
-      padding-right: 0;
-      padding-bottom: 0;
-    }
-
     &--block {
+      position: absolute;
       padding: 38px 20px 63px;
       background-color: #1c3374;
       color: $color-default-white;
       text-align: center;
       width: 240px;
-      margin: 0 40px;
-      grid-column: 2/3;
-      grid-row: 1/3;
+      left: 50%;
+      transform: translate(-50%);
 
       @include tablet-width {
-        grid-column: 1/3;
-        grid-row: 2/3;
-        width: 442px;
+        top: 286px;
+        min-width: 442px;
         padding: 14px 115px 37px;
         margin: 16px 0 9px;
       }
 
       @include mobile-width {
-        width: 100vw;
+        position: static;
+        transform: none;
+        min-width: 100vw;
         padding: 25px 20px 40px;
         margin: 39px 0 36px -15px;
       }
@@ -122,8 +144,6 @@
   }
 
   &__item-square {
-    padding-left: 30px;
-
     @include tablet-width {
       padding: 0;
       margin-right: 28px;
@@ -260,7 +280,7 @@
     }
 
     @include mobile-width {
-      margin: 3px 0 7px;
+      margin: 6px 0 5px;
     }
   }
 

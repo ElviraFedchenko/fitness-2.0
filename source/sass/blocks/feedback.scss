@@ -47,8 +47,7 @@
   }
 
   &__title {
-    color: #102654;
-    margin: 0 0 59px;
+    margin: 0 0 62px;
 
     @include tablet-width {
       margin: 0 0 54px;
@@ -91,7 +90,7 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       border: 1px solid #102654;
       color: #102654;
     }
@@ -193,7 +192,7 @@
     letter-spacing: 0.1px;
     cursor: pointer;
     width: 100%;
-    padding: 32px 0;
+    padding: 32px 50px 32px 0;
 
 
     @include tablet-width {

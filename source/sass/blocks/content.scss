@@ -53,7 +53,7 @@
   &__button {
     position: absolute;
     background-color: transparent;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -78,21 +78,58 @@
     }
 
     &--disabled {
-      color: $color-default-black;
+      color: $color-sapphire;
       opacity: 0.2;
 
       & circle:first-child {
-        stroke: #030a1a;
+        stroke: $color-sapphire;
         stroke-opacity: 1;
       }
 
       & circle:nth-child(2) {
-        fill: transparent;
+        fill: $color-default-white;
       }
+    }
+
+    & circle:nth-child(3) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-sapphire;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &:hover circle:first-child,
+    &:focus circle:first-child,
+    &:active circle:first-child {
+      stroke: $color-sapphire;
+      stroke-opacity: 1;
+    }
+
+    &:hover circle:nth-child(2),
+    &:focus circle:nth-child(2) {
+      fill: $color-default-white;
+    }
+
+    &:active circle:nth-child(2) {
+      fill: $color-transparent;
+    }
+
+    &:active circle:nth-child(3) {
+      display: block;
     }
   }
 
-  &__button svg {
+  & svg {
     position: relative;
+
+    @include tablet-width {
+      width: 70px;
+      height: 70px;
+    }
   }
 }

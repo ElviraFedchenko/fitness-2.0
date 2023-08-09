@@ -37,6 +37,11 @@
     width: 190px;
     margin-bottom: 25px;
 
+    &::placeholder {
+      color: $color-default-white;
+      opacity: 1;
+    }
+
     @include tablet-width {
       width: 206px;
     }
