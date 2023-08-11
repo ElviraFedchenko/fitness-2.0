@@ -242,7 +242,7 @@
 
   &__button-svg {
     position: absolute;
-    top: 25px;
+    top: 20%;
     right: 0;
     display: flex;
     width: 42px;
@@ -252,13 +252,13 @@
     color: #102654;
 
     @include tablet-width {
-      top: 22px;
+      top: 25%;
     }
 
     @include mobile-width {
       width: 32px;
       height: 32px;
-      top: 36px;
+      top: 33%;
     }
 
     & svg {
@@ -300,6 +300,14 @@
     @include mobile-width {
       margin-top: 4px;
       margin-bottom: 17px;
+    }
+  }
+
+  &__element.is-active &__button-svg {
+    top: 13%;
+
+    @include mobile-width {
+      top: 17%;
     }
   }
 
