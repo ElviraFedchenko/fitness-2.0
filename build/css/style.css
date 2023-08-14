@@ -2090,6 +2090,7 @@ button,
   height: 401px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #1c3374;
 }
 @media (max-width: 1199px) {
   .intro__img img {
@@ -2944,6 +2945,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #1c3374;
 }
 
 .trainer {
@@ -3641,6 +3643,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #1c3374;
 }
 .stock__link {
   font-family: "Roboto-Condensed", "Arial", sans-serif;
@@ -4535,6 +4538,7 @@ button,
     border-radius: 50%;
     width: 68px;
     height: 68px;
+    background-color: #ffffff;
   }
 }
 
