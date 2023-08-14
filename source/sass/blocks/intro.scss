@@ -109,6 +109,7 @@
     width: 100%;
     height: 401px;
     object-fit: cover;
+    background-color: #1c3374;
 
     @include tablet-width {
       height: 345px;
