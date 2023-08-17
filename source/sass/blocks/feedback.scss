@@ -50,7 +50,7 @@
   }
 
   &__title {
-    margin: 0 0 62px;
+    margin: 0 0 60px;
 
     @include tablet-width {
       margin: 0 0 54px;
@@ -89,6 +89,10 @@
       padding: 13px 10px;
     }
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     &:active {
       background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       color: $color-default-white;
@@ -119,6 +123,7 @@
 
     @include tablet-width {
       font-size: 18px;
+      max-width: 565px;
     }
 
     @include mobile-width {
@@ -133,8 +138,8 @@
       font-size: 18px;
       color: #102654;
       padding-bottom: 16px;
-      padding-top: 8px;
-      max-width: 680px;
+      padding-top: 4px;
+      max-width: 700px;
       padding-right: 40px;
 
       @include tablet-width {
@@ -145,6 +150,7 @@
         font-size: 16px;
         padding-bottom: 0;
         line-height: 142%;
+        padding-right: 25px;
       }
     }
   }
@@ -196,7 +202,7 @@
     margin-bottom: 120px;
 
     @include tablet-width {
-      margin-bottom: 93px;
+      margin-bottom: 96px;
 
       & .feedback__button {
         padding: 30px 0 27px;
@@ -204,7 +210,7 @@
     }
 
     @include mobile-width {
-      margin-bottom: 70px;
+      margin-bottom: 74px;
 
       & .feedback__button {
         padding: 22px 0 15px;
@@ -223,11 +229,11 @@
     letter-spacing: 0.1px;
     cursor: pointer;
     width: 100%;
-    padding: 32px 50px 32px 0;
+    padding: 34px 50px 32px 0;
 
 
     @include tablet-width {
-      padding: 30px 0;
+      padding: 36px 0 25px;
       max-width: 560px;
       line-height: 120%;
     }
@@ -249,7 +255,7 @@
 
   &__button--last .feedback__button-svg {
     @include tablet-width {
-      top: 32px;
+      top: 32%;
     }
   }
 
@@ -263,7 +269,7 @@
     padding: 34px 0 0;
 
     @include tablet-width {
-      padding: 31px 0 0;
+      padding: 29px 0 0;
     }
 
     @include mobile-width {
@@ -273,7 +279,7 @@
 
   &__button-svg {
     position: absolute;
-    top: 20%;
+    top: 27%;
     right: 0;
     display: flex;
     width: 42px;
@@ -283,7 +289,7 @@
     color: #102654;
 
     @include tablet-width {
-      top: 25%;
+      top: 30%;
     }
 
     @include mobile-width {
@@ -331,7 +337,7 @@
   }
 
   &__element.is-active &__button-svg {
-    top: 13%;
+    top: 14%;
 
     @include mobile-width {
       top: 17%;

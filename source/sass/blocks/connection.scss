@@ -33,11 +33,11 @@
     @include tablet-width {
       width: 100%;
       background-color: $color-sapphire;
-      padding: 70px 163px 70px 133px;
+      padding: 66px 163px 68px 133px;
     }
 
     @include mobile-width {
-      padding: 70px 15px;
+      padding: 66px 15px;
       width: 100%;
     }
   }
@@ -67,17 +67,21 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 17px 120px;
+    gap: 17px 75px;
 
     &::before {
       content: "";
       position: absolute;
       top: 7px;
       bottom: 6px;
-      left: 53%;
+      left: 46%;
       width: 1px;
       background-color: #74819c;
       transform: translateX(-50%);
+
+      @include tablet-width {
+        left: 53%;
+      }
 
       @include mobile-width {
         display: none;
@@ -85,7 +89,7 @@
     }
 
     @include tablet-width {
-      gap: 17px 77px;
+      gap: 17px 74px;
     }
 
     @include mobile-width {

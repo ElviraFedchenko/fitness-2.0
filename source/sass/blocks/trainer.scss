@@ -3,7 +3,7 @@
   position: relative;
 
   @include tablet-width {
-    padding: 0 0 100px 0;
+    padding: 0 0 96px 0;
   }
 
   @include mobile-width {
@@ -12,13 +12,13 @@
 
   &__container {
     position: relative;
-    padding: 0px 60px;
+    padding: 0 60px;
     margin: 0 auto;
     max-width: 1310px;
 
     @include tablet-width {
       position: relative;
-      padding: 0px 60px;
+      padding: 0 60px;
       margin: 0 auto;
     }
 
@@ -31,8 +31,6 @@
 
   &__slider {
     max-width: 1160px;
-
-    @include tablet-width {}
 
     @include mobile-width {
       margin: 0 32px;
