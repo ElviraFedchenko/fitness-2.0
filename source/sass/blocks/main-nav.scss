@@ -1,6 +1,5 @@
 .main-nav {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-  min-height: 658px;
   color: $color-default-white;
   min-height: 658px;
 
@@ -22,11 +21,11 @@
     padding: 29px 0 0;
 
     @include tablet-width {
-      padding-bottom: 33px;
+      padding-bottom: 12px;
     }
 
     @include mobile-width {
-      padding: 0;
+      padding: 18px 13px 0 0;
       margin: 0;
     }
   }
@@ -52,11 +51,21 @@
 
   &__logo {
     padding: 10px;
+
+    @include mobile-width {
+      padding: 0;
+    }
   }
 
   &__desk {
     padding: 10px;
     position: relative;
+    margin-right: -10px;
+
+    @include mobile-width {
+      padding: 0;
+      margin-left: 10px;
+    }
   }
 
   &__phone {
@@ -94,6 +103,7 @@
 
     @include tablet-width {
       height: 390px;
+      margin: 0;
     }
 
     @include mobile-width {
@@ -114,8 +124,9 @@
 
 
     @include mobile-width {
-      grid-template-columns: 1fr;
+      grid-template-columns: 113px 1fr;
       gap: 5px 0;
+      margin-left: 0;
     }
 
     @media (min-width: 375px) and (max-width: 767px) {
@@ -186,7 +197,7 @@
       letter-spacing: 3.6px;
       margin-right: 10px;
       margin-bottom: 16px;
-      margin-left: -12px;
+      margin-left: -10px;
     }
 
     @media (min-width: 375px) and (max-width: 767px) {
@@ -209,8 +220,8 @@
     }
 
     @include mobile-width {
-      margin: 80px -1px 0;
-      grid-area: 2/1/4/2;
+      margin: 80px 0 0 -14px;
+      grid-area: 2/1/2/1;
     }
 
     @media (min-width: 375px) and (max-width: 767px) {
@@ -288,7 +299,7 @@
   padding: 0 93px;
 
   @include tablet-width {
-    padding: 0 35px;
+    padding: 0 45px 0 35px;
   }
 
   @include mobile-width {

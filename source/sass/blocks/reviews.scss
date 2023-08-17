@@ -54,7 +54,7 @@
     @include mobile-width {
       align-items: center;
       justify-items: center;
-      padding: 30px 30px 34px;
+      padding: 30px 30px 33px;
       grid-template-columns: minmax(70px, 1fr) 1fr;
     }
   }
@@ -79,6 +79,10 @@
     grid-column: 2/3;
     margin: -45px 0 0;
 
+    @include tablet-width {
+      margin: -45px 3px 0;
+    }
+
     @include mobile-width {
       text-align: center;
       margin-top: 15px;
@@ -87,6 +91,8 @@
       font-size: 15px;
       line-height: 149%;
       letter-spacing: 0.26px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
@@ -132,7 +138,7 @@
       cursor: default;
     }
 
-    &:not(&.swiper-button-disabled) {
+    &:not(.swiper-button-disabled) {
       &:hover {
         border: 1px solid $color-sapphire;
       }
