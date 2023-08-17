@@ -1,13 +1,13 @@
 .feedback {
-  padding: 140px 0 95px;
+  padding: 140px 0 0;
   background-color: $additional-background;
 
   @include tablet-width {
-    padding: 114px 0 31px;
+    padding: 114px 0 0;
   }
 
   @include mobile-width {
-    padding: 76px 0 24px;
+    padding: 76px 0 0;
   }
 
   &__tabs {
@@ -30,12 +30,15 @@
 
     @include tablet-width {
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-right: 0;
     }
 
     @include mobile-width {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 10px 8px;
       justify-items: center;
       margin-bottom: 29px;
@@ -70,11 +73,13 @@
     padding: 18px 10px;
     margin-bottom: 8px;
     width: 260px;
+    max-height: 54px;
 
     @include tablet-width {
       width: 162px;
       margin-bottom: 40px;
       margin-right: 10px;
+      flex-basis: 48%;
     }
 
     @include mobile-width {
@@ -102,7 +107,7 @@
   }
 
   &__control.is-active {
-    background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: $color-default-white;
     border: 1px solid transparent;
   }
@@ -130,10 +135,10 @@
       padding-bottom: 16px;
       padding-top: 8px;
       max-width: 680px;
+      padding-right: 40px;
 
       @include tablet-width {
         padding-top: 6px;
-        max-width: 540px;
       }
 
       @include mobile-width {
@@ -151,6 +156,11 @@
 
     &:hover .feedback__button-svg,
     &:focus .feedback__button-svg {
+      background-color: #102654;
+      color: $color-default-white;
+    }
+
+    &:active .feedback__button-svg {
       background-color: #102654;
       color: $color-default-white;
     }
@@ -177,6 +187,27 @@
         font-size: 16px;
         padding: 20px 0 20px 0;
         width: 238px;
+      }
+    }
+  }
+
+  &__element:last-child {
+    border-bottom: 1px solid rgba(16, 38, 84, 0.2);
+    margin-bottom: 120px;
+
+    @include tablet-width {
+      margin-bottom: 93px;
+
+      & .feedback__button {
+        padding: 30px 0 27px;
+      }
+    }
+
+    @include mobile-width {
+      margin-bottom: 70px;
+
+      & .feedback__button {
+        padding: 22px 0 15px;
       }
     }
   }
@@ -282,10 +313,6 @@
 
   &__element.is-active &__button-svg--open {
     display: none;
-  }
-
-  &__element:last-child {
-    border-bottom: 1px solid $color-border;
   }
 
   &__element.is-active &__content {

@@ -2,7 +2,7 @@
   padding: 119px 0 126px 0;
 
   @include tablet-width {
-    padding: 101px 0 115px 0;
+    padding: 99px 0 114px 0;
   }
 
   @include mobile-width {
@@ -43,23 +43,28 @@
   &__inner {
     display: grid;
     grid-template-columns: 201px 137px;
+    max-width: 343px;
 
     @include tablet-width {
       grid-template-columns: 117px 1fr;
+      max-width: 202px;
     }
   }
 
   &__promo {
     color: $color-default-white;
     background-color: $red-background;
-    padding: 81px 86px 10px 76px;
+    padding: 81px 86px 40px 76px;
+    max-width: 500px;
 
     @include tablet-width {
       padding: 48px 44px 0;
+      min-width: 43%;
     }
 
     @include mobile-width {
       padding: 48px 43px 22px 43px;
+      max-width: 100%;
     }
   }
 
@@ -119,7 +124,7 @@
       content: "";
       top: 0;
       left: 0;
-      width: 100%;
+      width: 70%;
       height: 2px;
       background-color: $color-default-white;
     }
@@ -186,7 +191,7 @@
       content: "";
       top: 0;
       left: 0;
-      width: 80%;
+      width: 95%;
       height: 2px;
       background-color: $color-default-white;
     }
@@ -210,9 +215,9 @@
 
     &:hover,
     &:focus {
-      outline: 3px solid $color-default-white;
-      color: $color-default-white;
-      opacity: 0.8;
+      background-color: $color-default-white;
+      color: #103aae;
+      outline: 0;
     }
 
     &:disabled {
@@ -221,10 +226,22 @@
     }
   }
 
-  &__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: #1c3374;
+  &__img {
+    max-width: 100%;
+
+    @include tablet-width {
+      max-width: 400px;
+    }
+
+    @include mobile-width {
+      max-width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: #1c3374;
+    }
   }
 }

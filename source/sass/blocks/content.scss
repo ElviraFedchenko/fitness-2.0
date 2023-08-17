@@ -15,8 +15,8 @@
 
   @include mobile-width {
     position: static;
-    width: 320px;
-    height: 167px;
+    width: 100%;
+    height: auto;
     transform: translateX(0);
   }
 
@@ -39,11 +39,6 @@
     width: 100%;
     height: 100%;
     border: none;
-
-    @include mobile-width {
-      height: 167px;
-      width: auto;
-    }
   }
 
   &__video--enabled .video__button {

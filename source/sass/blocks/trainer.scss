@@ -3,20 +3,45 @@
   position: relative;
 
   @include tablet-width {
-    padding: 0 56px 100px 56px;
+    padding: 0 0 100px 0;
   }
 
   @include mobile-width {
-    padding: 0 32px 50px 32px;
+    padding: 0 0 70px 0;
+  }
+
+  &__container {
+    position: relative;
+    padding: 0px 60px;
+    margin: 0 auto;
+    max-width: 1310px;
+
+    @include tablet-width {
+      position: relative;
+      padding: 0px 60px;
+      margin: 0 auto;
+    }
+
+    @include mobile-width {
+      position: relative;
+      padding: 0;
+      margin: 0 auto;
+    }
   }
 
   &__slider {
-    position: relative;
+    max-width: 1160px;
+
+    @include tablet-width {}
+
+    @include mobile-width {
+      margin: 0 32px;
+    }
   }
 
   &__title {
     color: #102654;
-    margin: 0;
+    margin: 0 65px;
     padding-bottom: 68px;
 
     @include tablet-width {
@@ -27,6 +52,7 @@
     @include mobile-width {
       text-align: center;
       padding-bottom: 48px;
+      margin: 0 auto;
     }
   }
 
@@ -40,21 +66,23 @@
     cursor: pointer;
 
     @include tablet-width {
-      height: 294px;
+      height: 100%;
+    }
+
+    @include mobile-width {
+      min-width: 226px;
+      min-height: 274px;
+      aspect-ratio: 226/274;
     }
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-
-      @include mobile-width {
-        height: 274px;
+      @include tablet-width {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
       }
     }
   }
-
 
   &__profile {
     position: absolute;
@@ -87,7 +115,7 @@
     text-align: center;
 
     @include mobile-width {
-      padding: 40px 20px 10px;
+      padding: 42px 20px 10px;
     }
   }
 
@@ -99,6 +127,8 @@
   }
 
   &__prof {
+    font-family: $roboto-condensed;
+    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #b6bdcc;
@@ -122,6 +152,7 @@
   }
 
   &__item {
+    font-size: 14px;
     margin-bottom: 13px;
     list-style-type: disc;
   }
@@ -132,17 +163,96 @@
     visibility: visible;
   }
 
-  &__arrows {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1300px;
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: none;
+    background-color: $color-transparent;
+    border-radius: 50%;
+    color: $color-sapphire;
+    transform: translateY(50%);
+    width: 56px;
+    height: 56px;
+    bottom: 50%;
 
     @include tablet-width {
-      max-width: 678px;
+      width: 56px;
+      height: 56px;
+      bottom: 50%;
     }
 
     @include mobile-width {
-      max-width: 159px;
+      width: 32px;
+      height: 32px;
+      bottom: 50%;
+      margin: 0 3px;
     }
+
+    &:hover {
+      border: 1px solid $color-sapphire;
+    }
+
+    &:active {
+      background-color: $color-sapphire;
+      color: $color-default-white;
+    }
+
+    &:focus-visible {
+      border: 1px solid $color-sapphire;
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      opacity: 0.2;
+    }
+
+    & svg {
+      transform: translateX(-7%);
+
+      @include mobile-width {
+        width: 10px;
+        height: 19px;
+      }
+    }
+
+    &--prev {
+      left: -14px;
+
+      @include tablet-width {
+        left: -20px;
+      }
+
+      @include mobile-width {
+        left: -14px;
+      }
+    }
+
+    &--next {
+      transform: rotate(180deg) translateY(-50%);
+      right: -14px;
+
+      @include tablet-width {
+        right: -20px;
+      }
+
+      @include mobile-width {
+        right: -14px;
+      }
+    }
+  }
+}
+
+.trainer .container {
+  padding: 0 40px;
+
+  @include tablet-width {
+    padding: 0 45px;
+  }
+
+  @include mobile-width {
+    padding: 0 15px;
   }
 }

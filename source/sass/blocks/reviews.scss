@@ -23,13 +23,19 @@
   }
 
   &__wrapper {
-    width: 560px;
+    position: relative;
+    width: 760px;
+    padding: 0 100px;
     margin: 0 auto;
+
+    @include tablet-width {
+      padding: 0 100px;
+      width: 100%;
+    }
 
     @include mobile-width {
       width: 100%;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding: 0 47px;
     }
   }
 
@@ -40,6 +46,10 @@
     display: grid;
     color: $color-default-white;
     grid-template-columns: 108px 1fr;
+
+    @include tablet-width {
+      width: 566px;
+    }
 
     @include mobile-width {
       align-items: center;
@@ -80,23 +90,6 @@
     }
   }
 
-  &__arrows {
-    position: relative;
-    margin: 0 auto;
-    width: 561px;
-    top: 25px;
-
-    @include tablet-width {
-      width: 564px;
-      top: 33px;
-    }
-
-    @include mobile-width {
-      width: 161px;
-      top: -33px;
-    }
-  }
-
   &__img img {
     @include mobile-width {
       margin-top: 10px;
@@ -104,6 +97,86 @@
       width: 68px;
       height: 68px;
       background-color: $color-default-white;
+    }
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 2;
+    color: $color-sapphire;
+    transform: translateY(50%);
+    bottom: 50%;
+    width: 56px;
+    height: 56px;
+
+    @include tablet-width {
+      bottom: 50%;
+      width: 56px;
+      height: 56px;
+    }
+
+    @include mobile-width {
+      bottom: 50%;
+      width: 32px;
+      height: 32px;
+      margin: 0 3px;
+    }
+
+    &.swiper-button-disabled {
+      cursor: default;
+    }
+
+    &:not(&.swiper-button-disabled) {
+      &:hover {
+        border: 1px solid $color-sapphire;
+      }
+
+      &:active {
+        background-color: $color-sapphire;
+        color: $color-default-white;
+      }
+
+      &:focus-visible {
+        border: 1px solid $color-sapphire;
+        outline: none;
+      }
+    }
+
+    &:disabled {
+      background-color: transparent;
+      opacity: 0.2;
+    }
+
+    & svg {
+      transform: translateX(-7%);
+
+      @include mobile-width {
+        width: 10px;
+        height: 19px;
+      }
+    }
+
+    &--prev {
+      left: 26px;
+
+      @include mobile-width {
+        left: 0;
+      }
+    }
+
+    &--next {
+      transform: rotate(180deg) translateY(-50%);
+      right: 26px;
+
+      @include mobile-width {
+        right: 0;
+      }
     }
   }
 }
