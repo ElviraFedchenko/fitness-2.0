@@ -44,6 +44,7 @@
     grid-template-columns: 280px 1fr;
     background-color: $red-background;
     grid-row: span 2;
+    width: 100%;
 
     @include tablet-width {
       grid-row: span 1;
@@ -100,6 +101,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 145%;
+    padding-bottom: 20px;
 
     @include mobile-width {
       padding-bottom: 25px;
@@ -107,7 +109,7 @@
   }
 
   &__card {
-    padding: 25px 27px 30px;
+    padding: 25px 27px 27px;
     border: 7px solid;
     border-image: linear-gradient(#d10a42, #00359f);
     border-image-slice: 1;
@@ -130,7 +132,6 @@
       font-weight: 400;
       font-size: 16px;
       color: #1c3374;
-      margin: 0 0 63px;
       letter-spacing: 0.1px;
 
       @include tablet-width {
@@ -153,7 +154,20 @@
     }
   }
 
+  &__wrapper-link {
+    padding-top: 63px;
+
+    @include tablet-width {
+      padding-top: 38px;
+    }
+
+    @include mobile-width {
+      padding-top: 14px;
+    }
+  }
+
   &__card-link {
+    display: inline-block;
     font-family: $roboto-condensed;
     font-weight: 700;
     color: #1c3374;

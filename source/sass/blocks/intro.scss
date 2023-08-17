@@ -16,7 +16,7 @@
   }
 
   @include mobile-width {
-    padding: 64px 0 70px 0;
+    padding: 56px 0 70px 0;
     gap: 36px;
   }
 
@@ -37,22 +37,24 @@
   }
 
   &__description h2 {
-    font-size: 46px;
-    letter-spacing: 2.44px;
-    padding-top: 55px;
-    padding-bottom: 27px;
+    font-size: 48px;
+    letter-spacing: 1.5px;
+    padding-top: 39px;
+    padding-bottom: 9px;
     margin: 0;
+    line-height: normal;
 
     @include tablet-width {
-      font-size: 40px;
-      padding-top: 13px;
-      padding-bottom: 14px;
+      font-size: 42px;
+      letter-spacing: 1.3px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     @include mobile-width {
-      letter-spacing: 1.44px;
-      font-size: 31px;
-      padding-bottom: 13px;
+      letter-spacing: 0.9px;
+      font-size: 32px;
+      padding-bottom: 6px;
       padding-top: 7px;
     }
   }
@@ -105,20 +107,26 @@
     }
   }
 
-  &__img img {
-    width: 100%;
-    height: 401px;
-    object-fit: cover;
-    background-color: #1c3374;
-
-    @include tablet-width {
-      height: 345px;
-      margin: 0 auto;
+  &__img {
+    @include mobile-width {
+      width: 100%;
     }
 
-    @include mobile-width {
-      height: 313px;
+    img {
       width: 100%;
+      height: 401px;
+      object-fit: cover;
+      background-color: #1c3374;
+
+      @include tablet-width {
+        height: 345px;
+        margin: 0 auto;
+      }
+
+      @include mobile-width {
+        height: 313px;
+        width: 100%;
+      }
     }
   }
 }

@@ -26,45 +26,19 @@
     }
   }
 
-  &__form {
-    color: $color-default-white;
-    background-color: #102654;
-    padding: 56px 107px 70px 103px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  &__trial-wrapper {
     width: 50%;
+    padding: 70px 170px 70px 103px;
 
     @include tablet-width {
       width: 100%;
-      padding-left: 133px;
-      padding-bottom: 70px;
-      align-items: flex-start;
+      background-color: $color-sapphire;
+      padding: 70px 163px 70px 133px;
     }
 
     @include mobile-width {
-      padding: 60px 15px 68px;
-    }
-  }
-
-  &__form h2 {
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 156%;
-    margin: 0 0 16px;
-    color: inherit;
-
-    @include tablet-width {
-      font-size: 42px;
-      font-weight: 700;
-      margin: 0 0 22px;
-    }
-
-    @include mobile-width {
-      font-size: 32px;
-      font-weight: 600;
-      margin: 0 0 23px;
-      letter-spacing: 1px;
+      padding: 70px 15px;
+      width: 100%;
     }
   }
 
@@ -82,6 +56,12 @@
       letter-spacing: 1px;
     }
   }
+
+  &__contact-wrapper {
+    margin: 0 auto;
+    width: 502px;
+  }
+
 
   &__contact-list {
     position: relative;

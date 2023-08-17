@@ -1,0 +1,169 @@
+.trial {
+  color: $color-default-white;
+
+  @include tablet-width {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 502px;
+  }
+
+  @include mobile-width {
+    width: 100%;
+  }
+
+
+  h2 {
+    font-family: $alumni-sans;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    font-size: 55px;
+    line-height: 56px;
+    color: $color-default-white;
+    margin: 0;
+    padding-bottom: 28px;
+
+    @include tablet-width {
+      font-family: $alumni-sans;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 44px;
+      padding-bottom: 20px;
+    }
+
+    @include mobile-width {
+      font-size: 32px;
+      line-height: 34px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    gap: 30px;
+
+    @include tablet-width {
+      display: flex;
+      gap: 60px;
+    }
+
+    @include mobile-width {
+      display: block;
+      width: 100%;
+      padding-top: 5px;
+      padding-left: 0;
+    }
+  }
+
+  &__input {
+    position: relative;
+  }
+
+  &__input input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    line-height: 26px;
+    color: $color-default-white;
+    font-size: 17px;
+    width: 190px;
+
+    &::placeholder {
+      color: $color-default-white;
+      opacity: 1;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-default-white;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &:disabled {
+      opacity: 0.2;
+    }
+
+
+    @include tablet-width {
+      width: 206px;
+    }
+
+    @include mobile-width {
+      width: 100%;
+      margin-top: 32px;
+    }
+  }
+
+  &__input.is-invalid input {
+    border-bottom: 1px solid #ed0233;
+  }
+
+  &__input .is-valid {
+    position: absolute;
+    font-size: 14px;
+    color: $color-default-white;
+    left: 1px;
+    top: 28px;
+
+    @include tablet-width {
+      top: 28px;
+      left: -3px;
+    }
+
+    @include mobile-width {
+      top: 70px;
+      left: 1px;
+    }
+  }
+
+  &__input .is-invalid {
+    position: absolute;
+    font-size: 14px;
+    color: #ed0233;
+    left: 1px;
+    top: 28px;
+
+    @include tablet-width {
+      top: 28px;
+      left: -3px;
+    }
+
+    @include mobile-width {
+      top: 70px;
+      left: 1px;
+    }
+  }
+
+  &__button {
+    border: 3px solid $color-default-white;
+    background-color: transparent;
+    color: $color-default-white;
+    text-transform: uppercase;
+    font-family: $roboto-condensed;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    margin-top: 30px;
+    width: 410px;
+    padding: 16px 0;
+
+
+    @include tablet-width {
+      padding: 16px 0;
+      margin-top: 30px;
+      width: 94%;
+    }
+
+    @include mobile-width {
+      margin-top: 38px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

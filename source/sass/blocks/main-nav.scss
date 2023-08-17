@@ -2,8 +2,7 @@
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   min-height: 658px;
   color: $color-default-white;
-  padding-top: 30px;
-  padding-bottom: 47px;
+  min-height: 658px;
 
   @include tablet-width {
     background: conic-gradient(from 130.31deg at 20.03% 35.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -13,7 +12,6 @@
   @include mobile-width {
     background: conic-gradient(from 130.31deg at 35.03% 34.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 491px;
-    padding-top: 18px;
   }
 
   &__wrapper {
@@ -21,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0 -12px 0;
+    padding: 29px 0 0;
 
     @include tablet-width {
       padding-bottom: 33px;
@@ -36,7 +34,7 @@
   &__container {
     display: flex;
     grid-template-columns: 35% 65%;
-    gap: 64px;
+    gap: 52px;
     grid-area: 1 / 1 / 4 / 2;
 
     @include tablet-width {
@@ -52,6 +50,15 @@
     }
   }
 
+  &__logo {
+    padding: 10px;
+  }
+
+  &__desk {
+    padding: 10px;
+    position: relative;
+  }
+
   &__phone {
     font-family: $alumni-sans;
     font-weight: 400;
@@ -59,6 +66,10 @@
     color: $color-default-white;
     letter-spacing: 0.78px;
     margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     @include tablet-width {
       font-size: 23px;
@@ -72,8 +83,14 @@
 
   &__img img {
     width: 100%;
-    height: auto;
     object-fit: cover;
+    margin: -22px 0 0 13px;
+    max-width: 500px;
+    height: 556px;
+
+    @media (max-width: 1320px) {
+      margin-top: 0;
+    }
 
     @include tablet-width {
       height: 390px;
@@ -89,14 +106,20 @@
     grid-template-columns: 133px 246px;
     grid-template-rows: min-content min-content auto;
     gap: 8px 16px;
+    margin-left: 10px;
 
     @include tablet-width {
       grid-template-columns: 113px 187px;
     }
 
+
     @include mobile-width {
-      grid-template-columns: 113px 1fr;
+      grid-template-columns: 1fr;
       gap: 5px 0;
+    }
+
+    @media (min-width: 375px) and (max-width: 767px) {
+      grid-template-columns: 45% 55%;
     }
   }
 
@@ -108,7 +131,7 @@
     line-height: 69px;
     text-align: right;
     text-transform: uppercase;
-    margin: 106px 49px 0 0;
+    margin: 85px 49px 0 0;
     grid-column: span 2;
     align-self: end;
     grid-area: 1 / 2 / 1 / 2;
@@ -125,6 +148,11 @@
       line-height: normal;
       letter-spacing: 0.84px;
       margin: 72px 12px 9px 0;
+    }
+
+    @media (min-width: 375px) and (max-width: 767px) {
+      margin: 72px 0 9px 126px;
+      justify-self: start;
     }
   }
 
@@ -160,6 +188,11 @@
       margin-bottom: 16px;
       margin-left: -12px;
     }
+
+    @media (min-width: 375px) and (max-width: 767px) {
+      margin-left: -124px;
+      justify-self: start;
+    }
   }
 
   &__description {
@@ -178,6 +211,11 @@
     @include mobile-width {
       margin: 80px -1px 0;
       grid-area: 2/1/4/2;
+    }
+
+    @media (min-width: 375px) and (max-width: 767px) {
+      justify-self: end;
+      margin: 77px -5px 33px 0;
     }
   }
 
@@ -243,5 +281,17 @@
       color: $color-default-white;
       opacity: 0.5;
     }
+  }
+}
+
+.main-nav .container {
+  padding: 0 93px;
+
+  @include tablet-width {
+    padding: 0 35px;
+  }
+
+  @include mobile-width {
+    padding: 0 15px;
   }
 }
