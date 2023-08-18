@@ -1749,13 +1749,12 @@ button,
   padding: 10px 20px 10px 20px;
   position: relative;
   margin-right: -11px;
-  margin-right: -11px;
   margin-top: 5px;
 }
 @media (max-width: 1199px) {
   .main-nav__desk {
     margin-right: -20px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) {
