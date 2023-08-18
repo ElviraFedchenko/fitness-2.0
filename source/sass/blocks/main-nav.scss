@@ -17,7 +17,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     padding: 29px 0 0;
 
     @include tablet-width {
@@ -58,13 +57,20 @@
   }
 
   &__desk {
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     position: relative;
-    margin-right: -10px;
+    margin-right: -11px;
+    margin-top: 5px;
+
+    @include tablet-width {
+      margin-right: -20px;
+      margin-top: 0;
+    }
 
     @include mobile-width {
       padding: 0;
-      margin-left: 10px;
+      margin-left: 20px;
+      margin-right: -11px;
     }
   }
 
@@ -79,6 +85,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
+    max-width: 800px;
 
     @include tablet-width {
       font-size: 23px;
@@ -96,6 +103,7 @@
     margin: -22px 0 0 13px;
     max-width: 500px;
     height: 556px;
+    margin-bottom: 25px;
 
     @media (max-width: 1320px) {
       margin-top: 0;
