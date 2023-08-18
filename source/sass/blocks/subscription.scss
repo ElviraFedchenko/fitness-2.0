@@ -226,6 +226,10 @@
       padding: 18px 10px;
     }
 
+    @include mobile-width {
+      width: 54%;
+    }
+
     &:focus,
     &:hover {
       background: linear-gradient(151deg, #ed0233 0, #003eb7 100%);
