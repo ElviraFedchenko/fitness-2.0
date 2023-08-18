@@ -244,7 +244,7 @@
     }
 
     @include mobile-width {
-      background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+      background-image: conic-gradient(from 154deg at 84.03% .06%,#0041ca 85deg,#b80027 113deg,#0041ca);
       background-clip: text;
       /* stylelint-disable */
       -webkit-background-clip: text;

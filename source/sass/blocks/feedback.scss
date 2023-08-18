@@ -93,20 +93,17 @@
       margin-right: 0;
     }
 
-    &:active {
-      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-      color: $color-default-white;
+    &:hover {
+      border: 1px solid $color-sapphire;
     }
 
-    &:hover,
     &:focus-visible {
-      border: 1px solid #102654;
-      color: #102654;
+      outline: none;
+      border: 1px solid $color-sapphire;
     }
 
     &:disabled {
-      border: 1px solid $color-border;
-      color: #c8c9cc;
+      opacity: 0.2;
     }
   }
 

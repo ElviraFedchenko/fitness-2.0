@@ -2743,6 +2743,11 @@ button,
     padding: 18px 10px;
   }
 }
+@media (max-width: 767px) {
+  .subscription__button {
+    width: 54%;
+  }
+}
 .subscription__button:focus, .subscription__button:hover {
   background: linear-gradient(151deg, #ed0233 0, #003eb7 100%);
   color: #ffffff;
@@ -3589,7 +3594,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__number {
-    background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+    background-image: conic-gradient(from 154deg at 84.03% 0.06%, #0041ca 85deg, #b80027 113deg, #0041ca);
     background-clip: text;
     /* stylelint-disable */
     -webkit-background-clip: text;
@@ -4049,17 +4054,15 @@ button,
 .feedback__control:last-child {
   margin-right: 0;
 }
-.feedback__control:active {
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  color: #ffffff;
-}
-.feedback__control:hover, .feedback__control:focus-visible {
+.feedback__control:hover {
   border: 1px solid #102654;
-  color: #102654;
+}
+.feedback__control:focus-visible {
+  outline: none;
+  border: 1px solid #102654;
 }
 .feedback__control:disabled {
-  border: 1px solid rgba(16, 38, 84, 0.2);
-  color: #c8c9cc;
+  opacity: 0.2;
 }
 .feedback__control.is-active {
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
@@ -4849,6 +4852,13 @@ button,
     padding: 30px 30px 33px;
     -ms-grid-columns: minmax(70px, 1fr) 1fr;
     grid-template-columns: minmax(70px, 1fr) 1fr;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .reviews__item {
+    justify-items: left;
+    -ms-grid-columns: 108px 1fr;
+    grid-template-columns: 108px 1fr;
   }
 }
 .reviews__name {
